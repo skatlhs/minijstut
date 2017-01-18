@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>simple js tutorial</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js">
+    </script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=javascript"></script>
+    <link rel="stylesheet" type="text/css" href="n.css">
+    <link rel="stylesheet" type="text/css" href="menu.css"> </head>
+
+<body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <div class="menu-section">
+        <h1 id="top"></h1>
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <nav>
+            <ul role="navigation" class="hidden"> <a href="#syntax">syntax</a> <a href="#statements">statements</a> <a href="#variables">variables</a> <a href="#operators">operators</a> </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <h1>js tutorial</h1>
+            <br>
+            <br>
+            <h2>document.write()</h2> Using document.write() after an HTML document is fully loaded, will delete all existing HTML:
+            <br>
+            <br>
+            <button type="button" onclick="document.write(6 + 8)">Press me to add 6 + 8</button> This also gets rid of all HTML
+            <br>
+            <br><pre class="prettyprint"><xmp><button type="button" onclick="document.write(6 + 8)">Press me to add 6 + 8</button></xmp></pre>
+            <br>
+            <br>
+            <h2>InnerHTML</h2> To access an HTML element, JavaScript can use the document.getElementById(id) method.
+            <br> The id attribute defines the HTML element. The innerHTML property defines the HTML content:
+            <br>
+            <br>
+            <p id="demo">Demo paragraph will be changed to what the button adds</p>
+            <button onclick="getElementById('demo').innerHTML = 5 + 6">Button 5 + 6 inner HTML</button>
+            <br>
+            <br><pre class="prettyprint"><xmp><button onclick="getElementById('demo').innerHTML = 5 + 6">Add</button></xmp></pre>
+            <br>
+            <br> <img id="sample" src="https://images.unsplash.com/photo-1484648588865-95399bc7db7e?dpr=1&auto=format&fit=crop&w=767&h=889&q=80&cs=tinysrgb&crop=">
+            <button onclick="getElementById('sample').style.display='none'">Remove Image</button>
+            <br>
+            <br><pre class="prettyprint"><xmp><button onclick="getElementById('sample').style.display='none'">Remove Image</button></xmp></pre>
+            <br>
+            <br>
+            <h1 id="syntax"></h1>
+            <h2>Syntax</h2>
+            <p class="separator"></p>
+            <h2>JavaScript Programs</h2> A computer program is a list of <span class="highlight">instructions</span> to be <span class="highlight">executed</span> by the computer.
+            <br> In a programming language, these program instructions are called statements.
+            <br> JavaScript is a programming language. JavaScript statements are separated by semicolons:
+            <br>
+            <br> <pre class="prettyprint"><xmp>
+<p id="add"></p>
+
+<script>
+    var a, b, c;
+    a = 5;
+    b = 6;
+    c = a + b;
+    document.getElementById("add").innerHTML = c;
+</script>
+             </xmp></pre>
+            <p id="add" style="display:inline;color:#3eb489;"></p> (script running in code above)
+            <script>
+                var a, b, c;
+                a = 5;
+                b = 6;
+                c = a + b;
+                document.getElementById('add').innerHTML = c;
+            </script>
+            <br>
+            <br>
+            <h2>JavaScript Statements</h2> JavaScript statements are composed of: Values, Operators, Expressions, Keywords, and Comments.
+            <br>
+            <h2 style="color:#ff406d;">Values</h2> The JavaScript syntax defines two types of values: <span class="highlight">fixed</span> values and <span class="highlight">variable</span> values.
+            <br>Fixed values are called <span class="highlight">literals</span>. Variable values are called <span class="highlight">variables</span>.
+            <br>
+            <h2 style="color:#3eb489;">Literals</h2> The most important rules for writing fixed values are: Numbers are written with or without decimals:
+            <br>
+            <br><pre class="prettyprint"><xmp>10.32482934023, 123, 1.33, 69</xmp></pre>
+            <br>Strings are text, written within double or single quotes: <pre class="prettyprint"><xmp>"Holly", 'Bort', "Ottawa, ON", 'These are strings.'</xmp></pre>
+            <br>
+            <h2 style="color:#3eb489;">Variables</h2>In a programming language, variables are used to store data values. JavaScript uses the var keyword to declare variables. An equal sign is used to assign values to variables. In this example, x is defined as a variable. Then, x is assigned (given) the value 10: <pre class="prettyprint"><xmp>var x;
+x = 10;</xmp></pre>
+            <br>
+            <h2 style="color:#ff406d;">Operators</h2>JavaScript uses <span class="highlight">arithmetic operators</span> ( + - * / ) to compute values:
+            <br> <pre class="prettyprint"><xmp>5 + 10 * 2</xmp></pre> JavaScript uses an <span class="highlight">assignment operator</span> ( = ) to assign values to variables:
+            <br> <pre class="prettyprint"><xmp>var a, b;
+a = 25;
+b = 10;
+</xmp></pre>
+            <br> To add those numbers:
+            <br> <pre class="prettyprint"><xmp><p id="abvar"></p>
+
+<script>
+    var a, b;
+    a = 25;
+    b = 10;
+    document.getElementById('abvar').innerHTML = a + b;
+</script>
+
+</xmp></pre>
+            <p id="abvar" style="display:inline;"></p> is the result of the code above.
+            <br>
+            <script>
+                var a, b;
+                a = 25;
+                b = 10;
+                document.getElementById('abvar').innerHTML = a + b;
+            </script>
+            <br>
+            <h2 style="color:#ff406d;">Expressions</h2>An expression is a combination of values, variables, and operators, which computes to a value.
+            <br>The computation is called an <span class="highlight">evaluation</span>. For example, 10 * 10 <span class="highlight">evaluates</span> to 100:
+            <br>
+            <br> <pre class="prettyprint"><xmp><p id="mtply"></p>
+
+<script>
+    document.getElementById('mtply').innerHTML = 10 * 10;
+</script>
+
+<!-- The script would display the number 100 --> </xmp></pre>
+            <br> Evaluations can also contain variables
+            <br>
+            <br> <pre class="prettyprint"><xmp><p id="mtplyvar"></p>
+
+<script>
+    d = 25;
+    document.getElementById('mtplyvar').innerHTML = d * 5;
+</script>
+
+<!-- The script would display the number 125 --> </xmp></pre>
+            <br>
+            <br> The values can be of various types, such as numbers and strings.
+            <br> Example, "Jonathan" + " " + "is cool", evaluates to "Jonathan is cool"
+            <br>
+            <br> <pre class="prettyprint"><xmp><p id="myName"></p>
+
+<script>
+    document.getElementById('myName').innerHTML ="Jonathan" + " " + "is cool";
+</script>
+
+<!-- Jonathan is cool -->
+<!-- without the + " "  the output would  be Jonathanis cool -->
+</xmp></pre>
+            <br>
+            <h2 style="color:#ff406d;">Keywords</h2> JavaScript keywords are used to <span class="highlight">identify actions</span> to be performed. The var keyword tells the browser to create variables:
+            <br>
+            <br> <pre class="prettyprint"><xmp><p id="varx"></p>
+
+<script>
+    var d, f;
+    d = 10 + 5;
+    f = d * 10;
+    document.getElementById('varx').innerHTML = f;
+</script>         
+
+<!-- This code returns 150. d which is 15 (10 +5), so f is 15 * 10.--></xmp></pre>
+            <br>
+            <h2 style="color:#ff406d;">Comments</h2> Not all JavaScript statements are "executed". Code after double slashes // or between /* and */ is treated as a comment.
+            <br>Comments are ignored, and will not be executed:
+            <br>
+            <br> <pre class="prettyprint"><xmp><script>//This is a comment</script></xmp></pre>
+            <br>
+            <br>
+            <h2>Identifiers</h2>Identifiers are names. In JavaScript, identifiers are used to name variables (and keywords, and functions, and labels).
+            <br>The rules for legal names are much the same in most programming languages. In JavaScript, the first character must be a letter,
+            <br>an underscore (_), or a dollar sign ($). Subsequent characters may be letters, digits, underscores, or dollar signs.
+            <br>
+            <br> Javascript is <span class="highlight">case sensitive</span>. firstName &amp; firstname are two different variables.
+            <br>
+            <br><span class="highlight">Carmel Case:</span> commonly used, starts with a lower case letter, second word begins with capital.
+            <br> example: firstName, lastName, etc.
+            <br>
+            <br>
+            <p class="separator"></p>
+            <h1 id="statements"></h1>
+            <h2>JavaScript Statements</h2> In HTML, JavaScript statements are "instructions" to be "executed" by the web browser.
+            <br>
+            <br> This tells the browser to say <span class="highlight">hey buddy!</span> in an HTML element with the id="speak"
+            <br>
+            <br> <pre class="prettyprint"><xmp><p id="speak"></p>
+
+<script>
+    document.getElementById('speak').innerHTML = "hey buddy!";
+</script>
+
+</xmp></pre>
+            <br>
+            <br>
+            <h2>JavaScript Programs</h2> Most JavaScript programs contain many JavaScript statements (programs and statements usually called code).
+            <br>The statements are executed, one by one, in the same order as they are written.
+            <br> In this example a, b, and c are given values, and finally c is displayed:
+            <br>
+            <br> <pre class="prettyprint"><xmp><p id="varabc"></p>
+
+<script>
+    var  a, b, c;
+    a = 5;
+    b = 10;
+    c = a + b;
+    document.getElementById('varabc').innerHTML = c;
+</script>
+
+<!-- this give us a result of 15 -->
+            </xmp></pre>
+            <br>
+            <br>
+            <h2> JavaScript Code Blocks</h2> JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
+            <br> The purpose of code blocks is to define statements to be executed together.
+            <br> One place you will find statements grouped together in blocks, is in JavaScript functions:
+            <br>
+            <br> <pre class="prettyprint"><xmp><button type='button' onclick="buttonFunction()">Click the button</button>
+<p id="phrase1"></p>
+<p id="phrase2"></p>
+
+<script>
+    function buttonFunction() {
+    document.getElementById('phrase1').innerHTML="Hello pal.";
+    document.getElementById('phrase2').innerHTML="How are you doing today?";
+    }
+</script> </xmp></pre>
+            <button type='button' onclick="buttonFunction()">Click for the result</button>
+            <p id="phrase1"></p>
+            <p id="phrase2"></p>
+            <script>
+                function buttonFunction() {
+                    document.getElementById('phrase1').innerHTML = "Hello pal.";
+                    document.getElementById('phrase2').innerHTML = "How are you doing today?";
+                }
+            </script>
+            <br>
+            <br>
+            <h2> JavaScript Keywords</h2> JavaScript statements often start with a <span class="highlight">keyword</span> to identify the JavaScript action to be performed.
+            <br>
+            <br>
+            <div class="rowtable">
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">break</div>
+                    <div class="col-md-10"> Terminates a switch or a loop</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">continue</div>
+                    <div class="col-md-10">Jumps out of a loop and starts at the top</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">debugger</div>
+                    <div class="col-md-10">Stops the execution of JavaScript, and calls (if available) the debugging function</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">do ... while</div>
+                    <div class="col-md-10">Executes a block of statements, and repeats the block, while a condition is true</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">for</div>
+                    <div class="col-md-10">Marks a block of statements to be executed, as long as a condition is true </div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">function</div>
+                    <div class="col-md-10">Declares a function</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">if ... else</div>
+                    <div class="col-md-10">Marks a block of statements to be executed, depending on a condition </div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">return</div>
+                    <div class="col-md-10">Exits a function</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">switch</div>
+                    <div class="col-md-10">Marks a block of statements to be executed, depending on different cases </div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">try ... catch</div>
+                    <div class="col-md-10">Implements error handling to a block of statements </div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">var</div>
+                    <div class="col-md-10">Declares a variable </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p class="separator"></p>
+            <h1 id="variables"></h1>
+            <h2> JavaScript Variables</h2> JavaScript variables are containers for storing data values.
+            <br>
+            <br> <pre class="prettyprint"><xmp><p data-brackets-id='9854' id="totalprice"></p>
+
+<script data-brackets-id='9855'>
+    var item1 = 210;
+    var item2 = 115;
+    var total = item1 + item2;
+   document.getElementById("totalprice").innerHTML ="The total is: " + total;
+</script>
+</xmp></pre>
+            <p data-brackets-id='9854' id="totalprice"></p>
+            <script data-brackets-id='9855'>
+                var item1 = 210;
+                var item2 = 115;
+                var total = item1 + item2;
+                document.getElementById("totalprice").innerHTML = "The total is: " + total;
+            </script>
+            <br>
+            <h2>JavaScript Identifiers</h2> All JavaScript <span class="highlight">variables</span> must be <span class="highlight">identified</span> with <span class="highlight">unique names</span>. These unique names are called identifiers.
+            <br>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+            <br>
+            <br>
+            <h2>The Assignment Operator</h2>In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator. This is different from algebra.
+            <br>The following does <b>NOT</b> make sense in algebra:
+            <br>
+            <br> <pre class="prettyprint"><xmp>x = x + 5</xmp></pre> In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x.
+            <br>(It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.)
+            <br>
+            <br>
+            <h2>JavaScript Data Types</h2> JavaScript variables can hold numbers like 100 and text values like "John Doe".
+            <br>In programming, text values are called text strings.
+            <br>JavaScript can handle many types of data, but for now, just think of numbers and strings.
+            <br>Strings are written inside double or single quotes. Numbers are written without quotes.
+            <br>If you put a number in quotes, it will be treated as a text string.
+            <br>
+            <br> <pre class="prettyprint"><xmp><script>
+    var name = "Jonathan";
+    var middleInitial = "N";
+    var age = 25; 
+</script></xmp></pre>
+            <br>
+            <h2>Declaring (Creating) JavaScript Variables</h2> Creating a variable in JavaScript is called "declaring" a variable.
+            <br> You declare a JavaScript variable with the var keyword:
+            <br>
+            <br> <pre class="prettyprint"><xmp>var carName;</xmp></pre>
+            <br> To assign a value to the variable, use the equal sign:
+            <br>
+            <br> <pre class="prettyprint"><xmp>carName = Tesla;</xmp></pre>
+            <br>Example
+            <br>
+            <br> <pre class="prettyprint"><xmp><p id="vehicle"></p>
+
+<script>
+    var carName ="Tesla";
+    document.getElementById("vehicle").innerHTML = "I am goind to test drive a " + carName + " " + "tomorrow.";
+</script>
+            </xmp></pre>
+            <p id="vehicle"></p>
+            <script>
+                var carName = "Tesla";
+                document.getElementById("vehicle").innerHTML = "I am goind to test drive a " + carName + " " + "tomorrow.";
+            </script>
+            <br>
+            <br>
+            <h1 id="operators"></h1>
+            <h2>JavaScript Operators</h2> </div>
+        <!-- col --->
+    </div>
+    <!--- container --->
+    <script>
+        $(".menu-toggle").on('click', function () {
+            $(this).toggleClass("on");
+            $('.menu-section').toggleClass("on");
+            $("nav ul").toggleClass('hidden');
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
