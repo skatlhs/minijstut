@@ -96,3 +96,13 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
     padding-bottom:20px;
     margin-left:20px;
 }
+
+.note {
+    background:rgba(255,255,255,01);padding:15px;
+}
+
+.cblock {
+    width:100%;
+     background:rgba(255,255,255,01);padding:15px;
+  
+}

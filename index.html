@@ -600,8 +600,8 @@ var y = false;</xmp></pre>
             <h2>JavaScript Arrays</h2>
                 JS arrays are written with square brackets, and items separated by commas.<br>
             The following creates an array called cars, containing three items.<br><br>
-            <pre class="prettyprint"><xmp>var cars = ["Tesla", "BMW", "Fiat"]</xmp></pre>
-            Arrays indexes are zero-based, meaning the first item is [0], second item is [1], third [2]....
+            <pre class="prettyprint"><xmp>var cars = ["Tesla", "BMW", "Fiat"]</xmp></pre><br>
+            <span class="note">Array indexes are zero-based, meaning the first item is [0], second item is [1], third [2]....</span>
            <br><br>
             <h2>JavaScript Objects</h2>
             
@@ -646,8 +646,8 @@ typeof false               // Returns "boolean"</xmp></pre>
             <li>object</li><br>
             <pre class="prettyprint"><xmp>typeof [1,2,3,4]              // Returns "object" (not "array", see note below)
 typeof {name:'Holly', age:24} // Returns "object"
-typeof function myFunc(){}    // Returns "function"</xmp></pre>
-            *The typeof operator returns "object" for arrays because in JavaScript arrays are objects.
+typeof function myFunc(){}    // Returns "function"</xmp></pre><br>
+            <span class="note">The typeof operator returns "object" for arrays because in JavaScript arrays are objects.</span><br>
             
             <br><br>
             <h2>Undefined</h2>
@@ -676,6 +676,86 @@ null == undefined          // true</xmp></pre>
             <p class="separator"></p>
             <h1 id="functions"></h1>
             <h2>JavaScript Functions</h2>
+            A js function is a block of code designed to perform a particular task. <br>
+            A function is executed when something invokes it (<span class="highlight">calls it</span>).
+            <br><br>
+            <pre class="prettyprint"><xmp>function myFunction(p1, p2) {
+    return p1 * p2;              // The function returns the product of p1 and p2
+}</xmp></pre><br><br>
+            <h2>JS Function Syntax</h2>
+            A function is defined with the function keyword, followed by a name, dollowed by parentheses ().<br>
+            Functions names can contain letters, numbers, underscores, and dollar signs (same rules as variables).<br>
+            The parentheses may include parameter names separated by commas: (parameter1, parameter2,...)<br>
+            The code to be executed, by the function, is placed inside curly brackets {}. <br><br>
+            <pre class="prettyprint"><xmp>function name(param1, param2) {
+    code to be executed
+}</xmp></pre><br>
+            Function <span class="highlight">parameters</span> are the <soan class="highlight">names</soan> listed in the function definition/<br>
+            Function <span class="arguments">arguments</span> are the real <span class="highlight">values</span> received by the function when it is invoked.<br>
+            Inside the function, the arguments (the parameters) behave as local variables.<br><br>
+            <span class="note">A function is much the same as a procedure or a subroutine, in other programming languages.</span><br><br>
+            <br><h2>Function Invocation</h2>
+            The code inside the function will execute when something invokes/calls the function:
+            <li>When an even occurs (user clickint a button)</li>
+            <li>When it is invoked from js code</li>
+            <li>Automatically (self invoked)</li>
+            <br>
+            <h2>Function Return</h2>
+            When js reaches a <span class="highlight">return statement</span>, the function will stop executing.<br>
+            If the function was invoked from a statement, js will 'return' to execute the code after the invoking statement.<br>
+            Functions often compute a <span class="highlight">return value</span>. The return value is 'returned' back to the 'caller':<br><br>
+            <pre class="prettyprint"><xmp><p id="thisFunction"></p>
+            
+<script>
+    var x = myFunction(4, 3);      //Function is claled, return value will end up in x
+
+    function myFunction(a, b) {
+        return a * b;              //Function returns the product od a and b
+    }
+document.getElementById('thisFunction').innerHTML = myFunction(4, 3);
+</script></xmp></pre><br><br>
+            <h2>Why Functions?</h2>
+            The code can be reused: define it once, and use it over and over again.<br>
+            The same code can be used many times with different arguments to produce different results.<br><br>
+            <pre class="prettyprint"><xmp>function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+}
+document.getElementById("temp").innerHTML = toCelsius;</xmp></pre>
+            <br><br>
+            <h2>The () Operator Invokes the Function</h2>
+            Using the example above, <span class="highlight">toCelcius</span> refers to the function object, and <span class="highlight">toCelcius()</span> refers to the function result.
+        <pre class="prettyprint"><xmp><p id="temp"></p>
+        
+<script>    
+    function toCelcius(farenheit) {
+        return (5/9) * (farenheit-32);
+    }
+document.getElementById('temp').innerHTML = toCelcius;
+</script>
+</xmp></pre>    
+        
+        <br><br>
+            <h2>Functions Used as Variable Values</h2>
+        Functions can be used the same way we use variables, in all types of formulas, assignments and calculations.<br>
+          <br>  <div class="cblock"> Instead of using a variable to store the reurn value of a function:<br><br>
+                <pre class="prettyprint"><xmp>var x = toCelsius(77);
+var text = "The temperature is " + x + " Celsius";</xmp></pre><br><br>
+            We can use the function directly, as a variable value:
+            <br><br>
+            <pre class="prettyprint"><xmp><script>
+    var text = "The temperature is " + toCelcius(77) + " Celcius";
+</script>
+<!-- 
+<script>
+    document.getElementById("demo").innerHTML ="The temperature is " + toCelsius(77) + " Celsius";
+
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+} 
+</script> 
+-->
+            <!-- The temperature is 25 Celsius --></xmp></pre>
+            </div>
         </div>
         <!-- col --->
     </div>
