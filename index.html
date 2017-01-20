@@ -15,8 +15,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js">
     </script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=javascript"></script>
@@ -33,7 +32,16 @@
             <div class="three"></div>
         </div>
         <nav>
-            <ul role="navigation" class="hidden"> <a href="#syntax">syntax</a> <a href="#statements">statements</a> <a href="#variables">variables</a> <a href="#operators">operators</a> <a href="#datatypes">data types</a>  <a href="#functions">functions</a></ul>
+            <ul role="navigation" class="hidden"> Chapters
+                <li><a href="#syntax">syntax</a> </li>
+                <li> <a href="#statements">statements</a></li>
+                <li> <a href="#variables">variables</a> </li>
+                <li> <a href="#operators">operators</a> </li>
+                <li> <a href="#datatypes">data types</a></li>
+                <li> <a href="#functions">functions</a></li>
+                <li> <a href="#objects">objects</a></li>
+                <li> <a href="#scope">scope</a></li>
+            </ul>
         </nav>
     </div>
     <div class="container">
@@ -46,7 +54,7 @@
             <br>
             <button type="button" onclick="document.write(6 + 8)">Press me to add 6 + 8</button> This also gets rid of all HTML
             <br>
-            <br><pre class="prettyprint"><xmp><button type="button" onclick="document.write(6 + 8)">Press me to add 6 + 8</button></xmp></pre>
+            <br><pre class="prettyprint"><xmp><button class="custombutton" type="button" onclick="document.write(6 + 8)">Press me to add 6 + 8</button></xmp></pre>
             <br>
             <br>
             <h2>innerHTML</h2> To access an HTML element, JavaScript can use the document.getElementById(id) method.
@@ -562,149 +570,151 @@ b = 10;
                     </div>
                 </div>
             </div>
-                <br><br><p class="separator"></p>
-                <h1 id="datatypes"></h1><h2>JavaScript Data Types</h2>
-                JavaScript variables can hold many data types: numbers, strings, objects and more:
-                    <br><br>
-                <pre class="prettyprint"><xmp><script>
+            <br>
+            <br>
+            <p class="separator"></p>
+            <h1 id="datatypes"></h1>
+            <h2>JavaScript Data Types</h2> JavaScript variables can hold many data types: numbers, strings, objects and more:
+            <br>
+            <br> <pre class="prettyprint"><xmp><script>
     var age = 25;                                           // Number
     var hobby = "Watching movies";                          // String
     var fullName = {firstName = "Jon", lastName ="B"};      // Object
 </script></xmp></pre>
-                    <br><br>
-                <h2>The Concept of Data Types</h2>
-                In programming, data types is an important concept.
-<br>To be able to operate on variables, it is important to know something about the type.
-<br>Without data types, a computer cannot safely solve this:<br><br>
-                <pre class="prettyprint"><xmp>var x = 16 + "Joe"</xmp></pre>
-                <br><br>
-            Use quotes if they do not match the outer ones:
-            <pre class="prettyprint"><xmp>var answer = "It's alright";             // Single quote inside double quotes
+            <br>
+            <br>
+            <h2>The Concept of Data Types</h2> In programming, data types is an important concept.
+            <br>To be able to operate on variables, it is important to know something about the type.
+            <br>Without data types, a computer cannot safely solve this:
+            <br>
+            <br> <pre class="prettyprint"><xmp>var x = 16 + "Joe"</xmp></pre>
+            <br>
+            <br> Use quotes if they do not match the outer ones: <pre class="prettyprint"><xmp>var answer = "It's alright";             // Single quote inside double quotes
 var answer = "He is called 'Johnny'";    // Single quotes inside double quotes
 var answer = 'He is called "Johnny"';    // Double quotes inside single quotes</xmp></pre>
-                <br><br>
-            <h2>JavaScript Numbers</h2>
-                Numbers can be written with or without decimals.<br>
-            Extra large or extra small numbers can be written with scientific (exponential) notation:<br><br>
-            <pre class="prettyprint"><xmp>var y = 123e5;      // 12300000
+            <br>
+            <br>
+            <h2>JavaScript Numbers</h2> Numbers can be written with or without decimals.
+            <br> Extra large or extra small numbers can be written with scientific (exponential) notation:
+            <br>
+            <br> <pre class="prettyprint"><xmp>var y = 123e5;      // 12300000
 var z = 123e-5;     // 0.00123</xmp></pre>
-                <br><br>
-            <h2>JavaScript Booleans</h2>
-            Booleans can only have two values, <span style="color:#3eb489;">true</span> or <span style="color:#ff406d;">false</span><br><br>
-            <pre class="prettyprint"><xmp>var x = true;
-var y = false;</xmp></pre>
-            
-            Booleans are often used in conditional testing.
-                <br><br>
-            
-            <h2>JavaScript Arrays</h2>
-                JS arrays are written with square brackets, and items separated by commas.<br>
-            The following creates an array called cars, containing three items.<br><br>
-            <pre class="prettyprint"><xmp>var cars = ["Tesla", "BMW", "Fiat"]</xmp></pre><br>
-            <span class="note">Array indexes are zero-based, meaning the first item is [0], second item is [1], third [2]....</span>
-           <br><br>
-            <h2>JavaScript Objects</h2>
-            
-            KS objects are written with curly braces <i class="fa fa-arrow-right" aria-hidden="true"></i> { }<br>
-            Object properties are written as name: value pairs, separated by commas.<br><br>
-            <pre class="prettyprint"><xmp>var person = {firstName: "Jonathan", lastName: "B", age: 25};</xmp></pre>
-            
-            The Person object (var person) has 3 properties: firstName, lastName, and age.
-            <br><br>
-            
-            <h2>typeof Operator</h2>
-            This can be used to find the type of a js variable.<br>
-            <b>typeof</b> operator returns the type of a variable or an expression: <br><br>
-            <pre class="prettyprint"><xmp>typeof ""                  // Returns "string"
+            <br>
+            <br>
+            <h2>JavaScript Booleans</h2> Booleans can only have two values, <span style="color:#3eb489;">true</span> or <span style="color:#ff406d;">false</span>
+            <br>
+            <br> <pre class="prettyprint"><xmp>var x = true;
+var y = false;</xmp></pre> Booleans are often used in conditional testing.
+            <br>
+            <br>
+            <h2>JavaScript Arrays</h2> JS arrays are written with square brackets, and items separated by commas.
+            <br> The following creates an array called cars, containing three items.
+            <br>
+            <br> <pre class="prettyprint"><xmp>var cars = ["Tesla", "BMW", "Fiat"]</xmp></pre>
+            <br> <span class="note">Array indexes are zero-based, meaning the first item is [0], second item is [1], third [2]....</span>
+            <br>
+            <br>
+            <h2>JavaScript Objects</h2> KS objects are written with curly braces <i class="fa fa-arrow-right" aria-hidden="true"></i> { }
+            <br> Object properties are written as name: value pairs, separated by commas.
+            <br>
+            <br> <pre class="prettyprint"><xmp>var person = {firstName: "Jonathan", lastName: "B", age: 25};</xmp></pre> The Person object (var person) has 3 properties: firstName, lastName, and age.
+            <br>
+            <br>
+            <h2>typeof Operator</h2> This can be used to find the type of a js variable.
+            <br> <b>typeof</b> operator returns the type of a variable or an expression:
+            <br>
+            <br> <pre class="prettyprint"><xmp>typeof ""                  // Returns "string"
 typeof "Jonathan"              // Returns "string"
 typeof "Jon" + "athan"      // Returns "string"
 typeof 9          // Returns "number"
-typeof (14)      // Returns "number"</xmp></pre><br><br>
-            
-            
-            
-            <h2>Primitive Data</h2>
-            A primitive data value is a single data balue with no additional properties and methods.<br>
-            The typeof operator can return one of these primitive types:<br>
+typeof (14)      // Returns "number"</xmp></pre>
+            <br>
+            <br>
+            <h2>Primitive Data</h2> A primitive data value is a single data balue with no additional properties and methods.
+            <br> The typeof operator can return one of these primitive types:
+            <br>
             <li>string</li>
             <li>number</li>
             <li>boolean</li>
             <li>null</li>
             <li>undefined</li>
-            <br>
-            <pre class="prettyprint"><xmp>typeof "Austin"            // Returns "string" 
+            <br> <pre class="prettyprint"><xmp>typeof "Austin"            // Returns "string" 
 typeof 3.16                // Returns "number"
 typeof true                // Returns "boolean"
 typeof false               // Returns "boolean"</xmp></pre>
-            
-            
-            
-            <br><br>
-            <h2>Complex Data</h2>
-            The <b>trpeof</b> operator can return one of two complex types:<br>
+            <br>
+            <br>
+            <h2>Complex Data</h2> The <b>trpeof</b> operator can return one of two complex types:
+            <br>
             <li>function</li>
-            <li>object</li><br>
-            <pre class="prettyprint"><xmp>typeof [1,2,3,4]              // Returns "object" (not "array", see note below)
+            <li>object</li>
+            <br> <pre class="prettyprint"><xmp>typeof [1,2,3,4]              // Returns "object" (not "array", see note below)
 typeof {name:'Holly', age:24} // Returns "object"
-typeof function myFunc(){}    // Returns "function"</xmp></pre><br>
-            <span class="note">The typeof operator returns "object" for arrays because in JavaScript arrays are objects.</span><br>
-            
-            <br><br>
-            <h2>Undefined</h2>
-            In js, a variable without a value has the value of <b>undefined</b>/ The typeof is also undefined. <br><br>
-            <pre class="prettyprint"><xmp>var cars;                // Value is undefined, type is undefined</xmp></pre>
-            <br><br>
-            <h2>Empty Values</h2>
-            An empty value has nothing to do with undefined<br>
-            An empty string variable has both a value and a type.<br><br>
-            <pre class="prettyprint"><xmp>var car = "";              // The value is "", the typeof is "string"</xmp></pre>
-            
-            <br><br>
-            <h2>Null</h2>
-            In js null is 'nothing'. It is supposed to be something that doesn't exist.<br>
-            In js, the dta type of null is an object. <br><br>
-            <pre class="prettyprint"><xmp>var person = null;         // Value is null, but type is still an object</xmp></pre>
-            <br><br>
-            <h2>Difference Between Undefined and Null</h2>
-            
-            <pre class="prettyprint"><xmp>typeof undefined           // undefined
+typeof function myFunc(){}    // Returns "function"</xmp></pre>
+            <br> <span class="note">The typeof operator returns "object" for arrays because in JavaScript arrays are objects.</span>
+            <br>
+            <br>
+            <br>
+            <h2>Undefined</h2> In js, a variable without a value has the value of <b>undefined</b>/ The typeof is also undefined.
+            <br>
+            <br> <pre class="prettyprint"><xmp>var cars;                // Value is undefined, type is undefined</xmp></pre>
+            <br>
+            <br>
+            <h2>Empty Values</h2> An empty value has nothing to do with undefined
+            <br> An empty string variable has both a value and a type.
+            <br>
+            <br> <pre class="prettyprint"><xmp>var car = "";              // The value is "", the typeof is "string"</xmp></pre>
+            <br>
+            <br>
+            <h2>Null</h2> In js null is 'nothing'. It is supposed to be something that doesn't exist.
+            <br> In js, the dta type of null is an object.
+            <br>
+            <br> <pre class="prettyprint"><xmp>var person = null;         // Value is null, but type is still an object</xmp></pre>
+            <br>
+            <br>
+            <h2>Difference Between Undefined and Null</h2> <pre class="prettyprint"><xmp>typeof undefined           // undefined
 typeof null                // object
 null === undefined         // false
 null == undefined          // true</xmp></pre>
-        
-            <br><br>
+            <br>
+            <br>
             <p class="separator"></p>
             <h1 id="functions"></h1>
-            <h2>JavaScript Functions</h2>
-            A js function is a block of code designed to perform a particular task. <br>
-            A function is executed when something invokes it (<span class="highlight">calls it</span>).
-            <br><br>
-            <pre class="prettyprint"><xmp>function myFunction(p1, p2) {
+            <h2>JavaScript Functions</h2> A js function is a block of code designed to perform a particular task.
+            <br> A function is executed when something invokes it (<span class="highlight">calls it</span>).
+            <br>
+            <br> <pre class="prettyprint"><xmp>function myFunction(p1, p2) {
     return p1 * p2;              // The function returns the product of p1 and p2
-}</xmp></pre><br><br>
-            <h2>JS Function Syntax</h2>
-            A function is defined with the function keyword, followed by a name, dollowed by parentheses ().<br>
-            Functions names can contain letters, numbers, underscores, and dollar signs (same rules as variables).<br>
-            The parentheses may include parameter names separated by commas: (parameter1, parameter2,...)<br>
-            The code to be executed, by the function, is placed inside curly brackets {}. <br><br>
-            <pre class="prettyprint"><xmp>function name(param1, param2) {
+}</xmp></pre>
+            <br>
+            <br>
+            <h2>JS Function Syntax</h2> A function is defined with the function keyword, followed by a name, dollowed by parentheses ().
+            <br> Functions names can contain letters, numbers, underscores, and dollar signs (same rules as variables).
+            <br> The parentheses may include parameter names separated by commas: (parameter1, parameter2,...)
+            <br> The code to be executed, by the function, is placed inside curly brackets {}.
+            <br>
+            <br> <pre class="prettyprint"><xmp>function name(param1, param2) {
     code to be executed
-}</xmp></pre><br>
-            Function <span class="highlight">parameters</span> are the <soan class="highlight">names</soan> listed in the function definition/<br>
-            Function <span class="arguments">arguments</span> are the real <span class="highlight">values</span> received by the function when it is invoked.<br>
-            Inside the function, the arguments (the parameters) behave as local variables.<br><br>
-            <span class="note">A function is much the same as a procedure or a subroutine, in other programming languages.</span><br><br>
-            <br><h2>Function Invocation</h2>
-            The code inside the function will execute when something invokes/calls the function:
+}</xmp></pre>
+            <br> Function <span class="highlight">parameters</span> are the
+            <soan class="highlight">names</soan> listed in the function definition/
+            <br> Function <span class="arguments">arguments</span> are the real <span class="highlight">values</span> received by the function when it is invoked.
+            <br> Inside the function, the arguments (the parameters) behave as local variables.
+            <br>
+            <br> <span class="note">A function is much the same as a procedure or a subroutine, in other programming languages.</span>
+            <br>
+            <br>
+            <br>
+            <h2>Function Invocation</h2> The code inside the function will execute when something invokes/calls the function:
             <li>When an even occurs (user clickint a button)</li>
             <li>When it is invoked from js code</li>
             <li>Automatically (self invoked)</li>
             <br>
-            <h2>Function Return</h2>
-            When js reaches a <span class="highlight">return statement</span>, the function will stop executing.<br>
-            If the function was invoked from a statement, js will 'return' to execute the code after the invoking statement.<br>
-            Functions often compute a <span class="highlight">return value</span>. The return value is 'returned' back to the 'caller':<br><br>
-            <pre class="prettyprint"><xmp><p id="thisFunction"></p>
+            <h2>Function Return</h2> When js reaches a <span class="highlight">return statement</span>, the function will stop executing.
+            <br> If the function was invoked from a statement, js will 'return' to execute the code after the invoking statement.
+            <br> Functions often compute a <span class="highlight">return value</span>. The return value is 'returned' back to the 'caller':
+            <br>
+            <br> <pre class="prettyprint"><xmp><p id="thisFunction"></p>
             
 <script>
     var x = myFunction(4, 3);      //Function is claled, return value will end up in x
@@ -713,18 +723,19 @@ null == undefined          // true</xmp></pre>
         return a * b;              //Function returns the product od a and b
     }
 document.getElementById('thisFunction').innerHTML = myFunction(4, 3);
-</script></xmp></pre><br><br>
-            <h2>Why Functions?</h2>
-            The code can be reused: define it once, and use it over and over again.<br>
-            The same code can be used many times with different arguments to produce different results.<br><br>
-            <pre class="prettyprint"><xmp>function toCelsius(fahrenheit) {
+</script></xmp></pre>
+            <br>
+            <br>
+            <h2>Why Functions?</h2> The code can be reused: define it once, and use it over and over again.
+            <br> The same code can be used many times with different arguments to produce different results.
+            <br>
+            <br> <pre class="prettyprint"><xmp>function toCelsius(fahrenheit) {
     return (5/9) * (fahrenheit-32);
 }
 document.getElementById("temp").innerHTML = toCelsius;</xmp></pre>
-            <br><br>
-            <h2>The () Operator Invokes the Function</h2>
-            Using the example above, <span class="highlight">toCelcius</span> refers to the function object, and <span class="highlight">toCelcius()</span> refers to the function result.
-        <pre class="prettyprint"><xmp><p id="temp"></p>
+            <br>
+            <br>
+            <h2>The () Operator Invokes the Function</h2> Using the example above, <span class="highlight">toCelcius</span> refers to the function object, and <span class="highlight">toCelcius()</span> refers to the function result. <pre class="prettyprint"><xmp><p id="temp"></p>
         
 <script>    
     function toCelcius(farenheit) {
@@ -732,17 +743,20 @@ document.getElementById("temp").innerHTML = toCelsius;</xmp></pre>
     }
 document.getElementById('temp').innerHTML = toCelcius;
 </script>
-</xmp></pre>    
-        
-        <br><br>
-            <h2>Functions Used as Variable Values</h2>
-        Functions can be used the same way we use variables, in all types of formulas, assignments and calculations.<br>
-          <br>  <div class="cblock"> Instead of using a variable to store the reurn value of a function:<br><br>
-                <pre class="prettyprint"><xmp>var x = toCelsius(77);
-var text = "The temperature is " + x + " Celsius";</xmp></pre><br><br>
-            We can use the function directly, as a variable value:
-            <br><br>
-            <pre class="prettyprint"><xmp><script>
+</xmp></pre>
+            <br>
+            <br>
+            <h2>Functions Used as Variable Values</h2> Functions can be used the same way we use variables, in all types of formulas, assignments and calculations.
+            <br>
+            <br>
+            <div class="cblock"> Instead of using a variable to store the reurn value of a function:
+                <br>
+                <br> <pre class="prettyprint"><xmp>var x = toCelsius(77);
+var text = "The temperature is " + x + " Celsius";</xmp></pre>
+                <br>
+                <br> We can use the function directly, as a variable value:
+                <br>
+                <br> <pre class="prettyprint"><xmp><script>
     var text = "The temperature is " + toCelcius(77) + " Celcius";
 </script>
 <!-- 
@@ -754,8 +768,222 @@ function toCelsius(fahrenheit) {
 } 
 </script> 
 -->
-            <!-- The temperature is 25 Celsius --></xmp></pre>
+            <!-- The temperature is 25 Celsius --></xmp></pre> </div>
+            <br>
+            <br>
+            <p class="separator"></p>
+            <h1 id="objects"></h1>
+            <h2>JavaScript Objects</h2>
+            <h2>Real Life Objects, Properties, and Methods</h2> In real life, a car is an <span class="highlight">object</span>.
+            <br> A car has <span class="highlight">properties</span> like weight, and color, and <span class="highlight">methods</span> like start and stop.
+            <br>
+            <br>
+            <div class="rowtable2">
+                <div class="row" style="background-color:white;width:100%;">
+                    <br>
+                    <div class="col-md-5">
+                        <center>Object</center>
+                    </div>
+                    <div class="col-md-1">
+                        <center>Properties</center>
+                    </div>
+                    <div class="col-md-5">
+                        <center>Methods</center>
+                    </div>
+                    <br>
+                    <br> </div>
+                <div class="row" style="background-color:#f5f5f5;width:100%;">
+                    <div class="col-md-5">
+                        <br>
+                        <br>
+                        <center><img src="https://www.becomeelectric.ie/img/i8-small.png"></center>
+                        <br>
+                        <br> </div>
+                    <div class="col-md-3" style="margin-left:px;text-align;;">
+                        <br>car.name = BMW
+                        <br>
+                        <br>car.model = i8
+                        <br>
+                        <br>car.weight = 992kg
+                        <br>
+                        <br> car.color = silver</div>
+                    <div class="col-md-3" style="margin-left:0px;text-align:;">
+                        <br>car.start()
+                        <br>
+                        <br>car.drive()
+                        <br>
+                        <br>car.brake()
+                        <br>
+                        <br>car.stop()
+                        <br>
+                        <br> </div>
+                </div>
             </div>
+            <br> All cars have the same properties, but the property values differ from car to car.
+            <br> All cars have the same methods, but the methods are performed at different times.
+            <br>
+            <h2>JavaScript Objects</h2> We Know js variables are containers for data values.
+            <br> This code assigns a <span class="highlight">simple value</span> (BMW) to a <span class="highlight">variable</span> named car:
+            <br>
+            <br> <pre class="prettyprint"><xmp>var car = "BMW";</xmp></pre>
+            <br>
+            <br> Objects are variables too, but objects can contain many values.
+            <br> This code assigns <span class="highlight">multiple values</span> (BWM, i8, silver) to a <span class="highlight">variable</span> named car.
+            <br>
+            <br>
+            <div class="cblock"> <pre class="prettyprint"><xmp>var car = {type:"BMW", model:"i8", color:"silver"};</xmp></pre>
+                <br>
+                <br>To display:
+                <br>
+                <br> <pre class="prettyprint"><xmp><p id="carInfo"></p>
+<script>
+    var car = {type: "BMW", model: "i8", color: "silver"};
+    document.getElementById('carInfo').innerHTML = car.type + " " + car.model + " " + car.color;
+</script></xmp></pre>
+                <br>
+                <p id="carInfo"></p> The values are written as <span class="highlight">name:value</span> pairs (separated by colon).
+                <br> JavaScript objects are continers for <span class="highlight">named values</span>.
+                <script>
+                    var car = {
+                        type: "BMW"
+                        , model: "i8"
+                        , color: "silver"
+                    };
+                    document.getElementById('carInfo').innerHTML = car.type + " " + car.model + " " + car.color;
+                </script>
+            </div>
+            <br>
+            <br>
+            <h2>Object Properties</h2> The name:values pairs are called <span class="highlight">properties</span>.
+            <div class="cblock"> <pre class="prettyprint"><xmp>var person = {firstName: "Joel", age: 43, hairColor: "brown"};</xmp></pre>
+                <br>
+                <br>
+                <div class="rowtable" style="width:60%;">
+                    <div class="row" style="border:2px solid #eaeaea;border-bottom:none; background-color:white;width:100%;">
+                        <div class="col-md-2">Property</div>
+                        <div class="col-md-10">Property Value</div>
+                    </div>
+                    <div class="row" style="border:2px solid #eaeaea;border-bottom:none; background-color:#f5f5f5;width:100%;">
+                        <div class="col-md-2">firstName</div>
+                        <div class="col-md-10">Joel</div>
+                    </div>
+                    <div class="row" style="border:2px solid #eaeaea;border-bottom:none; background-color:white;width:100%;">
+                        <div class="col-md-2">age</div>
+                        <div class="col-md-10">43</div>
+                    </div>
+                    <div class="row" style="border:2px solid #eaeaea;border-bottom:; background-color:#f5f5f5;width:100%;">
+                        <div class="col-md-2">hairColor</div>
+                        <div class="col-md-10">brown</div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2>Object Methods</h2> Methods are <span class="highlight">actions</span> that can be performed on objects.
+            <br> Methods are stored in properties as <span class="highlight">function definitions</span>.
+            <br>
+            <br>
+            <div class="rowtable" style="width:60%;">
+                <div class="row" style="background-color:white;width:100%;">
+                    <div class="col-md-2">Property</div>
+                    <div class="col-md-10">Property Value</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:100%;">
+                    <div class="col-md-2">firstName</div>
+                    <div class="col-md-10">Joel</div>
+                </div>
+                <div class="row" style="background-color:white;width:100%;">
+                    <div class="col-md-2">age</div>
+                    <div class="col-md-10">43</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:100%;">
+                    <div class="col-md-2">hairColor</div>
+                    <div class="col-md-10">brown</div>
+                </div>
+                <div class="row" style="background-color:white;width:100%;">
+                    <div class="col-md-2">fullName</div>
+                    <div class="col-md-10">function(){return this.first.Name + " " + this.lastName;}</div>
+                </div>
+            </div>
+            <br>
+            <br><span class="cblock">JS objects are containers for names values valled properties or methods</span>
+            <br>
+            <br>
+            <h2>Object Definition</h2> We define and create a js object with an object literal:
+            <br>
+            <br> <pre class="prettyprint"><xmp>var person = {firstName: "Joel", age: 43, hairColor: "brown"};</xmp></pre>
+            <br>
+            <br>An object can span multiple lines
+            <br>
+            <br> <pre class="prettyprint"><xmp><p id="joel"></p>
+            
+<script>
+var person = {
+    firstName : "Joel",
+    age : 43,
+    hairColor: "brown"
+};
+document.getElementById('joel').innerHTML = person.firstName + " is " + person.age + " years old.";
+</script></xmp></pre>
+            <p id="joel"></p>
+            <script>
+                var person = {
+                    firstName: "Joel"
+                    , age: 43
+                    , hairColor: "brown"
+                };
+                document.getElementById('joel').innerHTML = person.firstName + " is " + person.age + " years old.";
+            </script>
+            <br>
+            <br>
+            <h2>Accessing Object Properties</h2> We can access object properties on 2 ways:
+            <br>
+            <br>
+            <div class="cblock"> <pre class="prettyprint"><xmp>objectName.propertyName or objectName.["propertyName"]</xmp></pre>
+                <br> Example:
+                <br> <pre class="prettyprint"><xmp><p id="person"></p>
+
+<script>
+    var author = {
+        fName: "Jonathan",
+        lName: "B",
+        ageNow: 26,
+        hairStyle: "Curly"
+    };
+document.getElementById("person").innerHTML = author.fName + " " + author["lName"] + " has " + 
+    " " + author.hairStyle + " hair" ;
+</script>
+            <!-- This returns: Jonathan B has curly hair --></xmp></pre> </div>
+            <br>
+            <br>
+            <h2>Accessing Object Methods</h2> We can access an object method with the following syntax:
+            <br>
+            <br>
+            <div class="cblock"><pre class="prettyprint"><xmp>onject.Name.methodName()</xmp></pre>
+                <br>
+                <br> <pre class="prettyprint"><xmp><p id="person"></p>
+
+<script>
+    var author = {
+        fName: "Jonathan",
+        lName: "B",
+        ageNow: 26,
+        hairStyle: "Curly",
+        fullName : function() {
+            return this.fName + " " + author.lName;
+        } //end of function
+    }; //end of author
+document.getElementById("person").innerHTML = author.fullName();
+</script>
+ <!-- This returns: Jonathan B  --></xmp></pre> </div>
+            <br>
+            <br>
+            <p class="separator"></p>
+            <h1 id="scope"></h1>
+            <h2>JavaScript Scope</h2>
+            
+            
+            <!-- this is where I left off -->
         </div>
         <!-- col --->
     </div>

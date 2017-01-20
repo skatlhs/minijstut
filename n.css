@@ -94,7 +94,11 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 .rowtable .row{
     padding-top:20px;
     padding-bottom:20px;
-    margin-left:20px;
+    margin-left:4px;
+}
+
+.rowtable2{
+    width:100%;
 }
 
 .note {
@@ -104,5 +108,5 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 .cblock {
     width:100%;
      background:rgba(255,255,255,01);padding:15px;
-  
+    
 }

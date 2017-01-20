@@ -49,9 +49,9 @@ nav ul {
     right: 45px;
     position: fixed;
     width: 100%;
-    font-weight: 100;
+    font-weight: bold;
     letter-spacing: 2px;
-    font-size: 11pt !important;
+    font-size: 12pt !important;
 /*    font-weight: bold;*/
 }
 
