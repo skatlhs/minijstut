@@ -6,38 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>simple js tutorial</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">å
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js">
     </script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=javascript"></script>
     <link rel="stylesheet" type="text/css" href="n.css">
-    <link rel="stylesheet" type="text/css" href="menu.css"> </head>
+    <link rel="stylesheet" type="text/css" href="newmenu.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
 
 <body>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <div class="menu-section">
-        <h1 id="top"></h1>
-        <div class="menu-toggle">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
-        </div>
-        <nav>
-            <ul role="navigation" class="hidden"> Chapters
-                <li><a href="#syntax">syntax</a> </li>
-                <li> <a href="#statements">statements</a></li>
-                <li> <a href="#variables">variables</a> </li>
-                <li> <a href="#operators">operators</a> </li>
-                <li> <a href="#datatypes">data types</a></li>
-                <li> <a href="#functions">functions</a></li>
-                <li> <a href="#objects">objects</a></li>
-                <li> <a href="#scope">scope</a></li>
-                <li> <a href="#events">events</a></li>
-                <li> <a href="#strings">strings</a></li>
-            </ul>
-        </nav>
-    </div>
     <div class="container">
         <div class="col-md-12">
             <h1>js tutorial</h1>
@@ -1349,70 +1328,70 @@ var lastName = 'B';</xmp></pre>
                     <div class="col-md-10">Allows you to add properties and methods to an object</div>
                 </div>
             </div>
-                <h2>Number Methods</h2>
-                <br>
-                <div class="rowtable">
-                    <div class="row" style="background-color:white;width:60%;font-weight:bold;">
-                        <div class="col-md-2">Method</div>
-                        <div class="col-md-10">Description</div>
-                    </div>
-                    <div class="row" style="background-color:#f5f5f5;width:60%;">
-                        <div class="col-md-2">isFinite()</div>
-                        <div class="col-md-10">Checks whether a value is a finite number</div>
-                    </div>
-                    <div class="row" style="background-color:white;width:60%;">
-                        <div class="col-md-2">isInteger()</div>
-                        <div class="col-md-10">Checks whether a value is an integer</div>
-                    </div>
-                    <div class="row" style="background-color:#f5f5f5;width:60%;">
-                        <div class="col-md-2">isNan()</div>
-                        <div class="col-md-10">Checks whether a value is Number.NaN</div>
-                    </div>
-                    <div class="row" style="background-color:white;width:60%;">
-                        <div class="col-md-2">isSafeInteger()</div>
-                        <div class="col-md-10">Checks whether a value is a safe integer</div>
-                    </div>
-                    <div class="row" style="background-color:#f5f5f5;width:60%;">
-                        <div class="col-md-2">toExponential(x)</div>
-                        <div class="col-md-10">Convers a numver into an exponential notation</div>
-                    </div>
-                    <div class="row" style="background-color:white;width:60%;">
-                        <div class="col-md-2">toFixed(x)</div>
-                        <div class="col-md-10">Formats a number with x numbers of digits after the decimal point</div>
-                    </div>
-                    <div class="row" style="background-color:#f5f5f5;width:60%;">
-                        <div class="col-md-2">toPrecision(x)</div>
-                        <div class="col-md-10">Formats a number to x length</div>
-                    </div>
-                    <div class="row" style="background-color:white;width:60%;">
-                        <div class="col-md-2">toString()</div>
-                        <div class="col-md-10">Converts a number to a string</div>
-                    </div>
-                    <div class="row" style="background-color:#f5f5f5;width:60%;">
-                        <div class="col-md-2">valueOf()</div>
-                        <div class="col-md-10">Returns the primitive value of a number</div>
-                    </div>
+            <h2>Number Methods</h2>
+            <br>
+            <div class="rowtable">
+                <div class="row" style="background-color:white;width:60%;font-weight:bold;">
+                    <div class="col-md-2">Method</div>
+                    <div class="col-md-10">Description</div>
                 </div>
-                <br><br><h2>String Length</h2>
-                The length of a string is found in the built in property <span class='highlight'>length</span>:<br><br>
-                <pre class='prettyprint'><xmp><p id="length"></p>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">isFinite()</div>
+                    <div class="col-md-10">Checks whether a value is a finite number</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">isInteger()</div>
+                    <div class="col-md-10">Checks whether a value is an integer</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">isNan()</div>
+                    <div class="col-md-10">Checks whether a value is Number.NaN</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">isSafeInteger()</div>
+                    <div class="col-md-10">Checks whether a value is a safe integer</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">toExponential(x)</div>
+                    <div class="col-md-10">Convers a numver into an exponential notation</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">toFixed(x)</div>
+                    <div class="col-md-10">Formats a number with x numbers of digits after the decimal point</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">toPrecision(x)</div>
+                    <div class="col-md-10">Formats a number to x length</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">toString()</div>
+                    <div class="col-md-10">Converts a number to a string</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">valueOf()</div>
+                    <div class="col-md-10">Returns the primitive value of a number</div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2>String Length</h2> The length of a string is found in the built in property <span class='highlight'>length</span>:
+            <br>
+            <br> <pre class='prettyprint'><xmp><p id="length"></p>
 
 <script>
     var abc = "abcdefghijklmnopqrstuvwxyz"
     document.getElementById("length").innerHTML = abc.length;
 </script>
 <!-- 26 --></xmp></pre>
-                
-            <br><br><h2>Special Characters</h2>
-            Strings must be written within quotes, so this will be misunderstood:<br><br>
-            <div class="cblock">
-                <pre class='prettyprint'><xmp>var t = "We are the only "athletic ones" on the team";</xmp></pre>
-                Instead, use \ before a " or '  
-                <pre class='prettyprint'><xmp>var t = "We are the only \"athletic ones\" on the team";</xmp></pre>
-            </div>
-            
-            <br><br><h2>Finding a String in a String</h2>
-            the <span class='highlight'>indexOf()</span> method returns the index (the postion) of the <span class='highlight'>first</span> occurrence of a specified text in a string:<pre class='prettyprint'><xmp><p id="searching">Please find the index of boxing in this sentence.</p>
+            <br>
+            <br>
+            <h2>Special Characters</h2> Strings must be written within quotes, so this will be misunderstood:
+            <br>
+            <br>
+            <div class="cblock"> <pre class='prettyprint'><xmp>var t = "We are the only "athletic ones" on the team";</xmp></pre> Instead, use \ before a " or ' <pre class='prettyprint'><xmp>var t = "We are the only \"athletic ones\" on the team";</xmp></pre> </div>
+            <br>
+            <br>
+            <h2>Finding a String in a String</h2> the <span class='highlight'>indexOf()</span> method returns the index (the postion) of the <span class='highlight'>first</span> occurrence of a specified text in a string:<pre class='prettyprint'><xmp><p id="searching">Please find the index of boxing in this sentence.</p>
 <button onclick="findtxt()">Find boxing</button>
 <p id="result"></p>
 
@@ -1422,23 +1401,21 @@ var lastName = 'B';</xmp></pre>
     var position = thistxt.indexOf("boxing");
     document.getElementById("result").innerHTML = position;
     }
-</script></xmp></pre>
-            This is similar to <span class='highlight'>search()</span>
-
-           <p id="searching">Please find the index of boxing in this sentence.</p>
+</script></xmp></pre> This is similar to <span class='highlight'>search()</span>
+            <p id="searching">Please find the index of boxing in this sentence.</p>
             <button onclick="findtxt()">Find boxing index</button>
             <p style="display:inline;" id="result"></p>
             <script>
-            function findtxt() {
-                var thistxt = document.getElementById("searching").innerHTML;
-                var position = thistxt.indexOf('boxing');
-                document.getElementById("result").innerHTML = position;
-            }
+                function findtxt() {
+                    var thistxt = document.getElementById("searching").innerHTML;
+                    var position = thistxt.indexOf('boxing');
+                    document.getElementById("result").innerHTML = position;
+                }
             </script>
-            
-            
-            <br><br><br> The <span class='highlight'>lastIndexOf()</span> method returns the index of the last occurrence of a specified text i n a string:<br>
-            <pre class='prettyprint'><xmp><p id="lastindex">Find the last index of the word index.</p>
+            <br>
+            <br>
+            <br> The <span class='highlight'>lastIndexOf()</span> method returns the index of the last occurrence of a specified text i n a string:
+            <br> <pre class='prettyprint'><xmp><p id="lastindex">Find the last index of the word index.</p>
 <button onclick="myindex()">Find the last index of index</button>
 <p style="display:inline;" id="indexresult"></p>
             
@@ -1459,29 +1436,34 @@ var lastName = 'B';</xmp></pre>
                     document.getElementById("indexresult").innerHTML = findr;
                 }
             </script>
-            <br><br><h2>The slice() Method</h2>
-            Slice extracts part of a sting and returns the extracted part in a new string.<br>
-            The method takes two parameters: the starting and ending indexes.<br><br>
-            <pre class='prettyprint'><xmp><p id="fruits"></p>
+            <br>
+            <br>
+            <h2>The slice() Method</h2> Slice extracts part of a sting and returns the extracted part in a new string.
+            <br> The method takes two parameters: the starting and ending indexes.
+            <br>
+            <br> <pre class='prettyprint'><xmp><p id="fruits"></p>
 
 <script>
     var myfruits = "Apple, Orange, Banana";
     document.getElementById("fruits").innerHTML = myfruits.slice(7, 13);
 </script>            
-            </xmp></pre>
-            This code returns: <p style="display:inline;" id="fruits"></p>
+            </xmp></pre> This code returns:
+            <p style="display:inline;" id="fruits"></p>
             <script>
                 var fruitstrings = "Apple, Orange, Banana";
                 document.getElementById("fruits").innerHTML = fruitstrings.slice(7, 13);
-            </script><br><br>
-            If the parameter is negative, the position is counted from the end of the string.<br>
-            If the last perameter is not included, the method will slice out the rest of the string <i class="fa fa-arrow-right" aria-hidden="true"></i> Orange, Banana".<br>
-            <span class='highlight'>substring()</span> is similar to slice(), but it cannot accept negative indexes.
-            <span class='highlight'>substr()</span> specifies the length of the extracted part:<br> substr(7, 6) <i class="fa fa-arrow-right" aria-hidden="true"></i> Orange<br> substr(7, 9) <i class="fa fa-arrow-right" aria-hidden="true"></i> Orange, B
-            <br><br>
-            <h2>replace() Method</h2>
-            The <span class='highlight'>replace()</span> method replacesa specified value with another value in a string:<br><br>
-            <pre class='prettyprint'><xmp><button onclick="myBrands()">Change brands</button>
+            </script>
+            <br>
+            <br> If the parameter is negative, the position is counted from the end of the string.
+            <br> If the last perameter is not included, the method will slice out the rest of the string <i class="fa fa-arrow-right" aria-hidden="true"></i> Orange, Banana".
+            <br> <span class='highlight'>substring()</span> is similar to slice(), but it cannot accept negative indexes. <span class='highlight'>substr()</span> specifies the length of the extracted part:
+            <br> substr(7, 6) <i class="fa fa-arrow-right" aria-hidden="true"></i> Orange
+            <br> substr(7, 9) <i class="fa fa-arrow-right" aria-hidden="true"></i> Orange, B
+            <br>
+            <br>
+            <h2>replace() Method</h2> The <span class='highlight'>replace()</span> method replacesa specified value with another value in a string:
+            <br>
+            <br> <pre class='prettyprint'><xmp><button onclick="myBrands()">Change brands</button>
 <p id="brand" style="display:inline;">I like Nike shoes!</p>
 
 <script>
@@ -1491,10 +1473,8 @@ var lastName = 'B';</xmp></pre>
         document.getElementById("brand").innerHTML = ua;
     }
 </script></xmp></pre>
-            
-            
             <button onclick="myBrands()">Change brands</button>
-           <p id="brand" style="display:inline;">I like Nike shoes!</p>
+            <p id="brand" style="display:inline;">I like Nike shoes!</p>
             <script>
                 function myBrands() {
                     var nike = document.getElementById("brand").innerHTML;
@@ -1502,9 +1482,9 @@ var lastName = 'B';</xmp></pre>
                     document.getElementById("brand").innerHTML = ua;
                 }
             </script>
-            
-            <br><br><h2>Upper and Lower Case</h2>
-            <pre class='prettyprint'><xmp><button onclick="myCase()">Change to uppercase</button>
+            <br>
+            <br>
+            <h2>Upper and Lower Case</h2> <pre class='prettyprint'><xmp><button onclick="myCase()">Change to uppercase</button>
 <p id="lowcs" style="display:inline;">change me to uppercase!</p>
         
 <script>
@@ -1512,8 +1492,8 @@ var lastName = 'B';</xmp></pre>
         var lwcase = document.getElementById("lowcs").innerHTML;
         document.getElementById("lowcs").innerHTML = lwcase.toUpperCase();
     }
-</script></xmp></pre><br>
-            
+</script></xmp></pre>
+            <br>
             <button onclick="myCase()">Change to uppercase</button>
             <p id="lowcs" style="display:inline;">change me to uppercase!</p>
             <script>
@@ -1522,20 +1502,312 @@ var lastName = 'B';</xmp></pre>
                     document.getElementById("lowcs").innerHTML = lwcase.toUpperCase();
                 }
             </script>
-            <!-- this is where I left off -->
-            </div>
-            <!-- col --->
+            <br><br><h1 id="arrays"></h1>
+            <h2>JavaScript Arrays</h2>
+            Arrays are used to store multiple values in a single variable.<br><br>
+            <pre class='prettyprint'><xmp>var cars = ["BMW", "Tesla", "Subaru"];</xmp></pre><br>
+            An arrays is a special variable, which can hold more than one value at a time.<br>
+            If you have a list of items (like cars), storing the cars in single variables can look like this:<br><br>
+            <pre class='prettyprint2'><xmp>var car1 = "BMW";
+var car2 = "Tesla";
+var car3 = "Subaru";</xmp></pre><br><br>
+            What if we want to loop through the cars and find a specific one? What if we had 300 instead of only 3?<br><br>
+            Arrays are the solution.<br>
+            An array can hold many values under a single name, and you can access the values by referring to an index number.<br><br>
+            <h2>Creating an Array</h2>
+            <br><pre class='prettyprint'><xmp>var cars = ["BMW", "Tesla", "Subaru"];</xmp></pre><br>
+            Spaces and line breaks aren't important, as a declaration can span multiple lines:<br><br>
+            <pre class='prettyprint'><xmp>var cars = [
+    "BMW",
+    "Tesla",
+    "Subaru"
+];</xmp></pre><br><br>
+            <h2>Access Elements of the Array</h2>
+            Refer to an array element by referring to the <span class='highlight'>index number</span>.<br>
+            <pre class='prettyprint'><xmp><p id="cardemo"></p>
+
+<script>
+    var cars = ["BMW", "Tesla", "Subaru"];
+    document.getElementById("cardemo").innerHTML = cars[1];
+    // this returns: Tesla
+</script></xmp></pre><br>Enter the var name to access the full array. In this case document.getElementById("cardemo").innerHTML = cars;<br><br>
+            <h2>Arrays are Objects</h2>
+            Arrays are a special type of object, The <span class='highlight'>typeOf()</span> operator in js reutnrs "object" for arrays.<br>
+            Arrays use numbers to access their elements. In the example above cars[1] returns Tesla.<br><br>
+            Objects also use names to access their members. <br><br>
+            <pre class='prettyprint'><xmp>   <p id="myself"></p>
+<script>
+    var dude = {firstName: "Jonathan", lastName: "B"};
+    document.getElementById("myself").innerHTML = dude.firstName;
+    // returns Jonathan
+</script></xmp></pre><br><br>
+            <h2>Looping Array Elements</h2>
+            The best way to loop through an array is using a <span class='highlight'>for</span> loop:
+            <pre class='prettyprint'><xmp><p id="fffts"></p>
+
+<script>
+    var fruits1, htext, flen, i;      
+    fruits1 = ["Cherries", "Apples", "Oranges", "Pineapples"];
+    flen = fruits1.length;
+    htext = "<ul>";
+    for (i = 0; i < flen; i++) {
+    htext += "<li>" + fruits1[i] + "</li>";
+    }
+    htext += "</ul>";
+    document.getElementById("fffts").innerHTML = htext;
+</script></xmp></pre>
+            Returns: 
+            <p id="fffts"></p>
+            <script>
+                var fruits1, htext, flen, i;
+                fruits1 = ["Cherries", "Apples", "Oranges", "Pineapples"];
+                flen = fruits1.length;
+                htext = "<ul>";
+                for (i = 0; i < flen; i++) {
+                    htext += "<li>" + fruits1[i] + "</li>";
+                }
+                htext += "</ul>";
+                document.getElementById("fffts").innerHTML = htext;
+            </script>
+            
+            <h2>Adding Array Elements</h2>
+            The easiest way is adding the push method.
+            <pre class='prettyprint'><xmp>var myfruits = ["Cherries ", "Apples ", "Oranges ", "Pineapples "];
+fruits.push("Lemon ");</xmp></pre>
+            <br><br>
+            <pre class='prettyprint'><xmp><button onclick="addFruit()">Add Lemon</button>
+<p style="display:inline;" id="fruitlist"></p>
+
+<script>
+    var listedfr = ["Cherries", "Apples", "Oranges" , "Pineapples"];
+    document.getElementById("fruitlist").innerHTML = listedfr;
+                
+    function addFruit() {
+        listedfr.push("Lenmons");
+        document.getElementById("fruitlist").innerHTML = listedfr;
+    }
+</script></xmp></pre>
+            
+            <button onclick="addFruit()">Add Lemons</button>
+            <p style="display:inline;" id="fruitlist"></p>
+            <script>
+                var listedfr = ["Cherries", "Apples", "Oranges" , "Pineapples"];
+                document.getElementById("fruitlist").innerHTML = listedfr;
+                
+                function addFruit() {
+                    listedfr.push("Lenmons");
+                    document.getElementById("fruitlist").innerHTML = listedfr;
+                }
+            </script>
+            <br><br><h2>Associative Arrays</h2>
+            Many programming languages support arryas with named indexes.<br>
+            Arrays with named indexes are called associative arrays or hashes.<br>
+            JS does not support arrays with named indexes.<br>
+            In JS, arrays always use numbered indexes.
+            <br><br>
+            <pre class='prettyprint'><xmp>var person = [];
+person[0] = "Holly";
+person[1] = "Lenny";
+person[2] = 22;
+person[3] = "Davis";
+
+var x = person.length       will return 4
+var y = person[1]           will return Lenny
+
+document.getElemenyById("demo").innerHTML = person[0] + " " + person.length
+will return Holly 4
+</xmp></pre><br><br>
+            In js arrays use numbered indexes<br>
+            In js objects use named indexes<br><br>
+            <h2>When to Use Arrays, When to Use Objects</h2>
+            JavaScript does not support associative arryays<br>
+            Use <span class='highlight'>objects</span> when you want element names to be strings.<br>
+            Use <span class='highlight'>arrays</span> when you want  element names to be numbers.<br>
+            Avoid using new array(), use [] instead.<br><br>
+            <h2>How to Recognize an Array</h2>
+            Solution: Array.isArray(arrayNameHere);
+            <br><br>
+            <p class="separator"></p>
+            <h1 id="arraymethods"></h1>
+            <h2>Array Methods</h2>
+            <h2>Converting Srings to Arrays</h2>
+            The method <span class='highlight'>toString()</span> converts an arrays to a string of (comma separated) array values.<br>
+            The <span class='highlight'>join()</span> method also joins all array elements into a string.<br>
+            It behaves like toString(), but in accition you can specify the operator.<br><br>
+            <pre class='prettyprint'><xmp>var names = ["Jonathan", "Holly", "Davis", "Clarke"];
+document.getElementById("demo").innerHTML = names.join(" - ");
+>> Jonathan - Holly - Davis - Clarke</xmp></pre><br><br>
+            <h2>Popping and Pushing</h2>
+            When working with arrays, it is east to remove elements and add new ones.<br>
+            This is what popping and pushing is: Popping items out, and pushing items into the array.<br><br>
+            <span class='highlight'>pop()</span> removes the last elements from the array.<br><br>
+            <pre class='prettyprint'><xmp><script>
+    var fruitpd = ["Cherries", "Apples", "Oranges" , "Pineapples"];
+    document.getElementById("popdemo1").innerHTML = fruitpd;
+                
+    function remFrt() {
+        fruitpd.pop();
+        document.getElementById("popdemo1").innerHTML = fruitpd;
+    }
+</script></xmp></pre>
+            
+          
+            
+            <button onclick="remFrt()">click to remove</button>
+            <p id="popdemo1"></p>
+            
+            <script>
+                var fruitpd = ["Cherries", "Apples", "Oranges" , "Pineapples"];
+                document.getElementById("popdemo1").innerHTML = fruitpd;
+                
+                function remFrt() {
+                    fruitpd.pop();
+                    document.getElementById("popdemo1").innerHTML = fruitpd;
+                }
+            </script>
+            
+            <br><br>
+            The <span class='highlight'>push()</span> method returns the new array length.<br><br>
+            <pre class='prettyprint'><xmp><button onclick="newpush()">push() method</button>
+<p style="display:inline;" id="pushit"></p>
+
+<script>
+    var sneakers = ["Under Armor", "Adidas", "Nike", "Vans"];
+    document.getElementById("pushit").innerHTML = sneakers;
+                
+    function newpush(){
+        document.getElementById("pushit").innerHTML = sneakers.push("Asics");
+    }
+</script></xmp></pre>
+            
+            
+            <button onclick="newpush()">push() method</button>
+            <p style="display:inline;" id="pushit"></p>
+            <script>
+                var sneakers = ["Under Armor", "Adidas", "Nike", "Vans"];
+                document.getElementById("pushit").innerHTML = sneakers;
+                
+                function newpush(){
+                    document.getElementById("pushit").innerHTML = sneakers.push("Asics");
+                }
+            </script>
+            <br><br>
+            <h2>Shifting Elements</h2>
+            Shifting is the equivalent to popping, working on the first element instead of the last.<br>
+            The <span class='highlight'>shift()</span> method removes the first array element and shifts all other elements to a lower index.<br>
+            <br><pre class='prettyprint'><xmp>function snkrFunction() {
+    document.getElementById("snkrdemo").innerHTML = sneakers.shift()
+}</xmp></pre>
+            
+            <button onclick="snkrFunction()">Remove</button>
+            <p style="display:inline;" id="shoels"></p>
+            
+            <script>
+                var sneakers =  ["Under Armor", "Adidas", "Nike", "Vans"];
+                document.getElementById("shoels").innerHTML = sneakers;
+                
+                function snkrFunction() {
+                    sneakers.shift();
+                    document.getElementById("shoels").innerHTML = sneakers;
+                }
+            </script><br><br>
+            <h1 id="sorting"></h1>
+            <h2>Sorting Arrays</h2>
+            <pre class='prettyprint'><xmp>fruits.sort();
+fruits.reverse();
+document.getElementById("demo").innerHTML = fruits;</xmp></pre>
+            
+            <button onclick="sortly()">Sort &amp; reverse</button>
+            <p style="display:inline" id="sortedfruits"></p>
+            <script>
+                var fruited = ["Cherries", "Apples", "Oranges" , "Pineapples"];
+                document.getElementById("sortedfruits").innerHTML = fruited;
+                
+                function sortly() {
+                    fruited.sort();
+                    fruited.reverse();
+                    document.getElementById("sortedfruits").innerHTML = fruited;
+                }
+            </script>
+            <br><br>
+            <h2>Alpha Numeric Sort</h2>
+            <pre class='prettyprint'><xmp><button onclick="myFunction1()">Sort Alphabetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+
+<p id="demo"></p>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;    
+
+function myFunction1() {
+    points.sort();
+    document.getElementById("demo").innerHTML = points;
+}
+function myFunction2() {
+    points.sort(function(a, b){return a - b});
+    document.getElementById("demo").innerHTML = points;
+}
+</script></xmp></pre>
+            
+            <button onclick="myFunction1()">Sort Alphabetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+
+<p id="numsort"></p>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("numsort").innerHTML = points;    
+
+function myFunction1() {
+    points.sort();
+    document.getElementById("numsort").innerHTML = points;
+}
+function myFunction2() {
+    points.sort(function(a, b){return a - b});
+    document.getElementById("numsort").innerHTML = points;
+}
+</script>
+            <br><br><p class="separator"></p><h1 id="booleans"></h1>
+            <h2>Booleans</h2>
+            
+              <!-- this is where I left off -->
         </div>
-        <!--- container --->
-        <script>
-            $(".menu-toggle").on('click', function () {
-                $(this).toggleClass("on");
-                $('.menu-section').toggleClass("on");
-                $("nav ul").toggleClass('hidden');
-            });
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <!-- col --->
+    </div>
+    <!-- menu -->
+    <nav class="navigation">
+        <div class="hamburger"> <span class="bars"></span> </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#syntax">syntax</a> </li>
+                <li> <a href="#statements">statements</a></li>
+                <li> <a href="#variables">variables</a> </li>
+                <li> <a href="#operators">operators</a> </li>
+                <li> <a href="#datatypes">data types</a></li>
+                <li> <a href="#functions">functions</a></li>
+                <li> <a href="#objects">objects</a></li>
+                <li> <a href="#scope">scope</a></li>
+                <li> <a href="#events">events</a></li>
+                <li> <a href="#strings">strings</a></li>
+                <li> <a href="#arrays">arrays</a></li>
+                <li> <a href="#arraymethods">array methods</a></li>
+                <li> <a href="#sorting">sorting arrays</a></li>
+                <li> <a href="#booleans">booleans</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end menu -->
+    <!--- container --->
+    <script>
+        jQuery(function ($) {
+            $(".hamburger").click(function () {
+                $(".navigation").toggleClass("open");
+            })
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
