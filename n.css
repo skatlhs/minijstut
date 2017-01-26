@@ -29,19 +29,32 @@ button {
 }
 
 button:hover {
-    background-color: rgba(180, 40, 88, 0.85);
+    background-color: #c73366;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
 }
 
-button:active { 
+button:active {
     background-color: rgb(159, 26, 72);
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    outline: none;
+    padding-left: 5px;
+    border: 3px solid #b42858;
+    margin-right: -25px;
+}
+
+input:focus {
+    outline: none;
 }
 
 #sample {
@@ -105,7 +118,8 @@ pre .typ {
 
 pre .lit {
     color: #ff406d;
-    font-weight: bold;
+    color: #ff46aa;
+    /*    font-weight: bold;*/
 }
 
 
@@ -119,7 +133,8 @@ pre .pun {
 /* punctuation */
 
 pre .pln {
-    color: #fff
+    color: #fff;
+    color: rgba(255, 255, 255, 0.89)
 }
 
 

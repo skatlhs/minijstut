@@ -1502,48 +1502,61 @@ var lastName = 'B';</xmp></pre>
                     document.getElementById("lowcs").innerHTML = lwcase.toUpperCase();
                 }
             </script>
-            <br><br><h1 id="arrays"></h1>
-            <h2>JavaScript Arrays</h2>
-            Arrays are used to store multiple values in a single variable.<br><br>
-            <pre class='prettyprint'><xmp>var cars = ["BMW", "Tesla", "Subaru"];</xmp></pre><br>
-            An arrays is a special variable, which can hold more than one value at a time.<br>
-            If you have a list of items (like cars), storing the cars in single variables can look like this:<br><br>
-            <pre class='prettyprint2'><xmp>var car1 = "BMW";
+            <br>
+            <br>
+            <h1 id="arrays"></h1>
+            <h2>JavaScript Arrays</h2> Arrays are used to store multiple values in a single variable.
+            <br>
+            <br> <pre class='prettyprint'><xmp>var cars = ["BMW", "Tesla", "Subaru"];</xmp></pre>
+            <br> An arrays is a special variable, which can hold more than one value at a time.
+            <br> If you have a list of items (like cars), storing the cars in single variables can look like this:
+            <br>
+            <br> <pre class='prettyprint2'><xmp>var car1 = "BMW";
 var car2 = "Tesla";
-var car3 = "Subaru";</xmp></pre><br><br>
-            What if we want to loop through the cars and find a specific one? What if we had 300 instead of only 3?<br><br>
-            Arrays are the solution.<br>
-            An array can hold many values under a single name, and you can access the values by referring to an index number.<br><br>
+var car3 = "Subaru";</xmp></pre>
+            <br>
+            <br> What if we want to loop through the cars and find a specific one? What if we had 300 instead of only 3?
+            <br>
+            <br> Arrays are the solution.
+            <br> An array can hold many values under a single name, and you can access the values by referring to an index number.
+            <br>
+            <br>
             <h2>Creating an Array</h2>
-            <br><pre class='prettyprint'><xmp>var cars = ["BMW", "Tesla", "Subaru"];</xmp></pre><br>
-            Spaces and line breaks aren't important, as a declaration can span multiple lines:<br><br>
-            <pre class='prettyprint'><xmp>var cars = [
+            <br><pre class='prettyprint'><xmp>var cars = ["BMW", "Tesla", "Subaru"];</xmp></pre>
+            <br> Spaces and line breaks aren't important, as a declaration can span multiple lines:
+            <br>
+            <br> <pre class='prettyprint'><xmp>var cars = [
     "BMW",
     "Tesla",
     "Subaru"
-];</xmp></pre><br><br>
-            <h2>Access Elements of the Array</h2>
-            Refer to an array element by referring to the <span class='highlight'>index number</span>.<br>
-            <pre class='prettyprint'><xmp><p id="cardemo"></p>
+];</xmp></pre>
+            <br>
+            <br>
+            <h2>Access Elements of the Array</h2> Refer to an array element by referring to the <span class='highlight'>index number</span>.
+            <br> <pre class='prettyprint'><xmp><p id="cardemo"></p>
 
 <script>
     var cars = ["BMW", "Tesla", "Subaru"];
     document.getElementById("cardemo").innerHTML = cars[1];
     // this returns: Tesla
-</script></xmp></pre><br>Enter the var name to access the full array. In this case document.getElementById("cardemo").innerHTML = cars;<br><br>
-            <h2>Arrays are Objects</h2>
-            Arrays are a special type of object, The <span class='highlight'>typeOf()</span> operator in js reutnrs "object" for arrays.<br>
-            Arrays use numbers to access their elements. In the example above cars[1] returns Tesla.<br><br>
-            Objects also use names to access their members. <br><br>
-            <pre class='prettyprint'><xmp>   <p id="myself"></p>
+</script></xmp></pre>
+            <br>Enter the var name to access the full array. In this case document.getElementById("cardemo").innerHTML = cars;
+            <br>
+            <br>
+            <h2>Arrays are Objects</h2> Arrays are a special type of object, The <span class='highlight'>typeOf()</span> operator in js reutnrs "object" for arrays.
+            <br> Arrays use numbers to access their elements. In the example above cars[1] returns Tesla.
+            <br>
+            <br> Objects also use names to access their members.
+            <br>
+            <br> <pre class='prettyprint'><xmp>   <p id="myself"></p>
 <script>
     var dude = {firstName: "Jonathan", lastName: "B"};
     document.getElementById("myself").innerHTML = dude.firstName;
     // returns Jonathan
-</script></xmp></pre><br><br>
-            <h2>Looping Array Elements</h2>
-            The best way to loop through an array is using a <span class='highlight'>for</span> loop:
-            <pre class='prettyprint'><xmp><p id="fffts"></p>
+</script></xmp></pre>
+            <br>
+            <br>
+            <h2>Looping Array Elements</h2> The best way to loop through an array is using a <span class='highlight'>for</span> loop: <pre class='prettyprint'><xmp><p id="fffts"></p>
 
 <script>
     var fruits1, htext, flen, i;      
@@ -1555,8 +1568,7 @@ var car3 = "Subaru";</xmp></pre><br><br>
     }
     htext += "</ul>";
     document.getElementById("fffts").innerHTML = htext;
-</script></xmp></pre>
-            Returns: 
+</script></xmp></pre> Returns:
             <p id="fffts"></p>
             <script>
                 var fruits1, htext, flen, i;
@@ -1569,13 +1581,10 @@ var car3 = "Subaru";</xmp></pre><br><br>
                 htext += "</ul>";
                 document.getElementById("fffts").innerHTML = htext;
             </script>
-            
-            <h2>Adding Array Elements</h2>
-            The easiest way is adding the push method.
-            <pre class='prettyprint'><xmp>var myfruits = ["Cherries ", "Apples ", "Oranges ", "Pineapples "];
+            <h2>Adding Array Elements</h2> The easiest way is adding the push method. <pre class='prettyprint'><xmp>var myfruits = ["Cherries ", "Apples ", "Oranges ", "Pineapples "];
 fruits.push("Lemon ");</xmp></pre>
-            <br><br>
-            <pre class='prettyprint'><xmp><button onclick="addFruit()">Add Lemon</button>
+            <br>
+            <br> <pre class='prettyprint'><xmp><button onclick="addFruit()">Add Lemon</button>
 <p style="display:inline;" id="fruitlist"></p>
 
 <script>
@@ -1587,25 +1596,25 @@ fruits.push("Lemon ");</xmp></pre>
         document.getElementById("fruitlist").innerHTML = listedfr;
     }
 </script></xmp></pre>
-            
             <button onclick="addFruit()">Add Lemons</button>
             <p style="display:inline;" id="fruitlist"></p>
             <script>
-                var listedfr = ["Cherries", "Apples", "Oranges" , "Pineapples"];
+                var listedfr = ["Cherries", "Apples", "Oranges", "Pineapples"];
                 document.getElementById("fruitlist").innerHTML = listedfr;
-                
+
                 function addFruit() {
                     listedfr.push("Lenmons");
                     document.getElementById("fruitlist").innerHTML = listedfr;
                 }
             </script>
-            <br><br><h2>Associative Arrays</h2>
-            Many programming languages support arryas with named indexes.<br>
-            Arrays with named indexes are called associative arrays or hashes.<br>
-            JS does not support arrays with named indexes.<br>
-            In JS, arrays always use numbered indexes.
-            <br><br>
-            <pre class='prettyprint'><xmp>var person = [];
+            <br>
+            <br>
+            <h2>Associative Arrays</h2> Many programming languages support arryas with named indexes.
+            <br> Arrays with named indexes are called associative arrays or hashes.
+            <br> JS does not support arrays with named indexes.
+            <br> In JS, arrays always use numbered indexes.
+            <br>
+            <br> <pre class='prettyprint'><xmp>var person = [];
 person[0] = "Holly";
 person[1] = "Lenny";
 person[2] = 22;
@@ -1616,32 +1625,39 @@ var y = person[1]           will return Lenny
 
 document.getElemenyById("demo").innerHTML = person[0] + " " + person.length
 will return Holly 4
-</xmp></pre><br><br>
-            In js arrays use numbered indexes<br>
-            In js objects use named indexes<br><br>
-            <h2>When to Use Arrays, When to Use Objects</h2>
-            JavaScript does not support associative arryays<br>
-            Use <span class='highlight'>objects</span> when you want element names to be strings.<br>
-            Use <span class='highlight'>arrays</span> when you want  element names to be numbers.<br>
-            Avoid using new array(), use [] instead.<br><br>
-            <h2>How to Recognize an Array</h2>
-            Solution: Array.isArray(arrayNameHere);
-            <br><br>
+</xmp></pre>
+            <br>
+            <br> In js arrays use numbered indexes
+            <br> In js objects use named indexes
+            <br>
+            <br>
+            <h2>When to Use Arrays, When to Use Objects</h2> JavaScript does not support associative arryays
+            <br> Use <span class='highlight'>objects</span> when you want element names to be strings.
+            <br> Use <span class='highlight'>arrays</span> when you want element names to be numbers.
+            <br> Avoid using new array(), use [] instead.
+            <br>
+            <br>
+            <h2>How to Recognize an Array</h2> Solution: Array.isArray(arrayNameHere);
+            <br>
+            <br>
             <p class="separator"></p>
             <h1 id="arraymethods"></h1>
             <h2>Array Methods</h2>
-            <h2>Converting Srings to Arrays</h2>
-            The method <span class='highlight'>toString()</span> converts an arrays to a string of (comma separated) array values.<br>
-            The <span class='highlight'>join()</span> method also joins all array elements into a string.<br>
-            It behaves like toString(), but in accition you can specify the operator.<br><br>
-            <pre class='prettyprint'><xmp>var names = ["Jonathan", "Holly", "Davis", "Clarke"];
+            <h2>Converting Srings to Arrays</h2> The method <span class='highlight'>toString()</span> converts an arrays to a string of (comma separated) array values.
+            <br> The <span class='highlight'>join()</span> method also joins all array elements into a string.
+            <br> It behaves like toString(), but in accition you can specify the operator.
+            <br>
+            <br> <pre class='prettyprint'><xmp>var names = ["Jonathan", "Holly", "Davis", "Clarke"];
 document.getElementById("demo").innerHTML = names.join(" - ");
->> Jonathan - Holly - Davis - Clarke</xmp></pre><br><br>
-            <h2>Popping and Pushing</h2>
-            When working with arrays, it is east to remove elements and add new ones.<br>
-            This is what popping and pushing is: Popping items out, and pushing items into the array.<br><br>
-            <span class='highlight'>pop()</span> removes the last elements from the array.<br><br>
-            <pre class='prettyprint'><xmp><script>
+>> Jonathan - Holly - Davis - Clarke</xmp></pre>
+            <br>
+            <br>
+            <h2>Popping and Pushing</h2> When working with arrays, it is east to remove elements and add new ones.
+            <br> This is what popping and pushing is: Popping items out, and pushing items into the array.
+            <br>
+            <br> <span class='highlight'>pop()</span> removes the last elements from the array.
+            <br>
+            <br> <pre class='prettyprint'><xmp><script>
     var fruitpd = ["Cherries", "Apples", "Oranges" , "Pineapples"];
     document.getElementById("popdemo1").innerHTML = fruitpd;
                 
@@ -1650,25 +1666,21 @@ document.getElementById("demo").innerHTML = names.join(" - ");
         document.getElementById("popdemo1").innerHTML = fruitpd;
     }
 </script></xmp></pre>
-            
-          
-            
             <button onclick="remFrt()">click to remove</button>
             <p id="popdemo1"></p>
-            
             <script>
-                var fruitpd = ["Cherries", "Apples", "Oranges" , "Pineapples"];
+                var fruitpd = ["Cherries", "Apples", "Oranges", "Pineapples"];
                 document.getElementById("popdemo1").innerHTML = fruitpd;
-                
+
                 function remFrt() {
                     fruitpd.pop();
                     document.getElementById("popdemo1").innerHTML = fruitpd;
                 }
             </script>
-            
-            <br><br>
-            The <span class='highlight'>push()</span> method returns the new array length.<br><br>
-            <pre class='prettyprint'><xmp><button onclick="newpush()">push() method</button>
+            <br>
+            <br> The <span class='highlight'>push()</span> method returns the new array length.
+            <br>
+            <br> <pre class='prettyprint'><xmp><button onclick="newpush()">push() method</button>
 <p style="display:inline;" id="pushit"></p>
 
 <script>
@@ -1679,59 +1691,56 @@ document.getElementById("demo").innerHTML = names.join(" - ");
         document.getElementById("pushit").innerHTML = sneakers.push("Asics");
     }
 </script></xmp></pre>
-            
-            
             <button onclick="newpush()">push() method</button>
             <p style="display:inline;" id="pushit"></p>
             <script>
                 var sneakers = ["Under Armor", "Adidas", "Nike", "Vans"];
                 document.getElementById("pushit").innerHTML = sneakers;
-                
-                function newpush(){
+
+                function newpush() {
                     document.getElementById("pushit").innerHTML = sneakers.push("Asics");
                 }
             </script>
-            <br><br>
-            <h2>Shifting Elements</h2>
-            Shifting is the equivalent to popping, working on the first element instead of the last.<br>
-            The <span class='highlight'>shift()</span> method removes the first array element and shifts all other elements to a lower index.<br>
+            <br>
+            <br>
+            <h2>Shifting Elements</h2> Shifting is the equivalent to popping, working on the first element instead of the last.
+            <br> The <span class='highlight'>shift()</span> method removes the first array element and shifts all other elements to a lower index.
+            <br>
             <br><pre class='prettyprint'><xmp>function snkrFunction() {
     document.getElementById("snkrdemo").innerHTML = sneakers.shift()
 }</xmp></pre>
-            
             <button onclick="snkrFunction()">Remove</button>
             <p style="display:inline;" id="shoels"></p>
-            
             <script>
-                var sneakers =  ["Under Armor", "Adidas", "Nike", "Vans"];
+                var sneakers = ["Under Armor", "Adidas", "Nike", "Vans"];
                 document.getElementById("shoels").innerHTML = sneakers;
-                
+
                 function snkrFunction() {
                     sneakers.shift();
                     document.getElementById("shoels").innerHTML = sneakers;
                 }
-            </script><br><br>
+            </script>
+            <br>
+            <br>
             <h1 id="sorting"></h1>
-            <h2>Sorting Arrays</h2>
-            <pre class='prettyprint'><xmp>fruits.sort();
+            <h2>Sorting Arrays</h2> <pre class='prettyprint'><xmp>fruits.sort();
 fruits.reverse();
 document.getElementById("demo").innerHTML = fruits;</xmp></pre>
-            
             <button onclick="sortly()">Sort &amp; reverse</button>
             <p style="display:inline" id="sortedfruits"></p>
             <script>
-                var fruited = ["Cherries", "Apples", "Oranges" , "Pineapples"];
+                var fruited = ["Cherries", "Apples", "Oranges", "Pineapples"];
                 document.getElementById("sortedfruits").innerHTML = fruited;
-                
+
                 function sortly() {
                     fruited.sort();
                     fruited.reverse();
                     document.getElementById("sortedfruits").innerHTML = fruited;
                 }
             </script>
-            <br><br>
-            <h2>Alpha Numeric Sort</h2>
-            <pre class='prettyprint'><xmp><button onclick="myFunction1()">Sort Alphabetically</button>
+            <br>
+            <br>
+            <h2>Alpha Numeric Sort</h2> <pre class='prettyprint'><xmp><button onclick="myFunction1()">Sort Alphabetically</button>
 <button onclick="myFunction2()">Sort Numerically</button>
 
 <p id="demo"></p>
@@ -1749,29 +1758,695 @@ function myFunction2() {
     document.getElementById("demo").innerHTML = points;
 }
 </script></xmp></pre>
-            
             <button onclick="myFunction1()">Sort Alphabetically</button>
-<button onclick="myFunction2()">Sort Numerically</button>
+            <button onclick="myFunction2()">Sort Numerically</button>
+            <p id="numsort"></p>
+            <script>
+                var points = [40, 100, 1, 5, 25, 10];
+                document.getElementById("numsort").innerHTML = points;
 
-<p id="numsort"></p>
+                function myFunction1() {
+                    points.sort();
+                    document.getElementById("numsort").innerHTML = points;
+                }
+
+                function myFunction2() {
+                    points.sort(function (a, b) {
+                        return a - b
+                    });
+                    document.getElementById("numsort").innerHTML = points;
+                }
+            </script>
+            <br>
+            <br>
+            <p class="separator"></p>
+            <h1 id="booleans"></h1>
+            <h2>Booleans</h2> Often in programming, you will need a data type that can onle have one of wo values:
+            <li>Yes / No</li>
+            <li>On / Off</li>
+            <li>True / False</li>
+            <br> For this, js has a boolean data type. It can only take values true or false.
+            <br>
+            <br>
+            <h2>The Boolean() Function</h2> You can use the Boolean() function to find out if an expression (or a variable) is true:
+            <br>
+            <br> <pre class='1prettyprint'>Boolean(10 > 9);  //returns true<xmp></xmp></pre> <pre class='prettyprint'><xmp><button onclick="bcheck()">10 > 9</button>
+<button onclick="fcheck()">10 > 120</button>
+<p id="tenovernine"></p>
 
 <script>
-var points = [40, 100, 1, 5, 25, 10];
-document.getElementById("numsort").innerHTML = points;    
+    function bcheck() {
+        document.getElementById("tenovernine").innerHTML = Boolean(10 > 9);
+    }
+                
+    function fcheck(){
+        document.getElementById("tenovernine").innerHTML = Boolean (10 > 120);
+    }
+</script></xmp></pre>
+            <button onclick="bcheck()">10 > 9</button>
+            <button onclick="fcheck()">10 > 120</button>
+            <p id="tenovernine"></p>
+            <script>
+                function bcheck() {
+                    document.getElementById("tenovernine").innerHTML = Boolean(10 > 9);
+                }
 
-function myFunction1() {
-    points.sort();
-    document.getElementById("numsort").innerHTML = points;
-}
-function myFunction2() {
-    points.sort(function(a, b){return a - b});
-    document.getElementById("numsort").innerHTML = points;
-}
-</script>
-            <br><br><p class="separator"></p><h1 id="booleans"></h1>
-            <h2>Booleans</h2>
+                function fcheck() {
+                    document.getElementById("tenovernine").innerHTML = Boolean(10 > 120);
+                }
+            </script>
+            <br>
+            <br>
+            <h2>Comparisons and Conditions</h2>
+            <div class="rowtable">
+                <br>
+                <div class="row" style="background-color:white;width:60%;font-weight:bold;color:#333;">
+                    <div class="col-md-2">Operator</div>
+                    <div class="col-md-3">Description</div>
+                    <div class="col-md-4">Example</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">==</div>
+                    <div class="col-md-3">equal to</div>
+                    <div class="col-md-4">if (day == "Monday")</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">&gt;</div>
+                    <div class="col-md-3">greater than</div>
+                    <div class="col-md-4">if (salary &gt; 9000)</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">&lt;</div>
+                    <div class="col-md-3">less than</div>
+                    <div class="col-md-4">if (age &lt; 25)</div>
+                </div>
+                <br> Everything with a real value is true, everything without a real value is false...makes sense....
+                <br>
+                <br> </div>
+            <br>
+            <br>
+            <h2>Booleans Can Be objects</h2> Normally js booleans are primitive values created from literals: <span class='highlight'>var x = false</span> <i class="fa fa-arrow-right" aria-hidden="true"></i> returns boolean
+            <br> But booleans can also be defined as objects with the keyword new: <span class='highlight'>var y = new Boolean(false)</span> <i class="fa fa-arrow-right" aria-hidden="true"></i> returns object
+            <br>
+            <br>
+            <div class="cblock">Do not create Boolean objects. It slows down execution speed.
+                <br> The new keyword complicates the code. This can produce some unexpected results</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="separator"></p>
+            <h1 id="comparisons"></h1>
+            <h2>Comparison and Logical Operators</h2> Comparison operators are used in logical statements to determine equality or difference between variables or values.
+            <br> Given that <span class='highlight'>x = 5</span>, the table below explains the comparison operators
+            <br>
+            <br>
+            <div class="rowtable">
+                <div class="row" style="background-color:white;width:60%;font-weight:bold;color:#333;">
+                    <div class="col-md-2">Operator</div>
+                    <div class="col-md-5">Description</div>
+                    <div class="col-md-3">Comparing</div>
+                    <div class="col-md-2">Returns</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">==</div>
+                    <div class="col-md-5">equal to</div>
+                    <div class="col-md-3">x == 8
+                        <br>
+                        <br>x == 5
+                        <br>
+                        <br> x == "5"</div>
+                    <div class="col-md-2">false
+                        <br>
+                        <br>true
+                        <br>
+                        <br>true</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">===</div>
+                    <div class="col-md-5">equal value and equal type</div>
+                    <div class="col-md-3">x === 5
+                        <br>
+                        <br>x === "5"</div>
+                    <div class="col-md-2">true
+                        <br>
+                        <br>false
+                        <br>
+                        <br> </div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">!=</div>
+                    <div class="col-md-5">not equal</div>
+                    <div class="col-md-3">x != 8</div>
+                    <div class="col-md-2">true</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">!==</div>
+                    <div class="col-md-5">not equal value or not euqal type</div>
+                    <div class="col-md-3">x ! == 5
+                        <br>
+                        <br>x !== "5"
+                        <br>
+                        <br> x !== 8</div>
+                    <div class="col-md-2">false
+                        <br>
+                        <br>true
+                        <br>
+                        <br>true</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">&gt;</div>
+                    <div class="col-md-5">greater than</div>
+                    <div class="col-md-3">x > 8</div>
+                    <div class="col-md-2">false</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">&lt;</div>
+                    <div class="col-md-5">less than</div>
+                    <div class="col-md-3">x &lt; 8</div>
+                    <div class="col-md-2">true</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">&gt;=</div>
+                    <div class="col-md-5">greater than or equal to</div>
+                    <div class="col-md-3">x &gt;= 8</div>
+                    <div class="col-md-2">false</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">&lt;=</div>
+                    <div class="col-md-5">less than or equal to</div>
+                    <div class="col-md-3">x &lt;= 8</div>
+                    <div class="col-md-2">true</div>
+                </div>
+            </div>
+            <h2>How It Can Be Used</h2> Comparison operators can be used in conditional statements to compare values and take action depending on the result
+            <br>
+            <br> <span class='cblock'>if (age &lt; 25) text = "Too Young"</span>
+            <br>
+            <br>
+            <h2>Logical Operators</h2> Logical Operators are used to determine the logic between variables or values.
+            <br> Given the <span class='highlight'>x = 6</span> and <span class='highlight'>y = 3</span>, the table below explaing the logical operators:
+            <br>
+            <br>
+            <div class="rowtable">
+                <div class="row" style="background-color:white;width:60%;font-weight:bold;color:#333;">
+                    <div class="col-md-2">Operator</div>
+                    <div class="col-md-3">Description</div>
+                    <div class="col-md-3">Example</div>
+                    <div class="col-md-2">Returns</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">&amp;&amp;</div>
+                    <div class="col-md-3">and</div>
+                    <div class="col-md-3">(x &lt; 10 &amp;&amp; y &gt; 1)</div>
+                    <div class="col-md-2">true</div>
+                </div>
+                <div class="row" style="background-color:white;width:60%;">
+                    <div class="col-md-2">||</div>
+                    <div class="col-md-3">or</div>
+                    <div class="col-md-3">(x == 5 || y == 5)</div>
+                    <div class="col-md-2">false</div>
+                </div>
+                <div class="row" style="background-color:#f5f5f5;width:60%;">
+                    <div class="col-md-2">!</div>
+                    <div class="col-md-3">not</div>
+                    <div class="col-md-3">!(x == y)</div>
+                    <div class="col-md-2">true</div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2>Conditional (Ternary) Operator</h2> JavaScript alsocontains a conditional operator that assigns a value to a variable based on some condition.
+            <br>
+            <br>
+            <h4>Syntax</h4> <pre class='1prettyprint'><xmp>variablename = (condition) ? value1:value2</xmp></pre>
+            <br>
+            <br> <pre class='prettyprint'><xmp><script>var voteable = (age < 18) ? "Too young":"Old enough";</script></xmp></pre>
+            <input id="agecheck" placeholder="check if you can vote" />
+            <button onclick="agefunction()" style="border-top-left-radius:0;border-bottom-left-radius:0;">Check age</button> &nbsp;&nbsp;&nbsp;
+            <p id="canvote"></p>
+            <script>
+                function agefunction() {
+                    var agecheck, voteable;
+                    agecheck = document.getElementById("agecheck").value;
+                    voteable = (agecheck < 18) ? "Too Young" : "Old enough";
+                    document.getElementById("canvote").innerHTML = voteable + " to vote.";
+                }
+            </script>
+            <br>
+            <br>
+            <h1 id="conditions"></h1>
+            <h2>Conditional Statements</h2> Often when you write code, you want to perform differenct actions for different decisions.
+            <br> You can use conditional statements in your code to do this.
+            <br>
+            <br> In js we have the following conditional statements:
+            <br> Use <span class='highlight'>if</span> to specifiy a block of code to beexecuted if a specified condion is true
+            <br> Use <span class='highlight'>else</span> to specifiy a block of code to be executed if the same condition is false
+            <br> Use <span class='highlight'>else if</span> to specify a new condition to test, if the first condition is false
+            <br> Use <span class='highlight'>switch</span> to specify many alternative blocks of code to be executed.
+            <br>
+            <br>
+            <h2>The if Statement</h2> <pre class='prettyprint'><xmp><p id ="timenow">Good Evening!</p>
+
+<script>
+    if (new Date().getHours() < 18) {
+        document.getElementById("timenow").innerHTML = "Good Day!";
+    }
+</script></xmp></pre>
+            <p id="timenow">Good Evening!</p>
+            <script>
+                if (new Date().getHours() < 18) {
+                    document.getElementById("timenow").innerHTML = "Good Day!";
+                }
+            </script>
+            <br>
+            <br>
+            <h2>The else Statement</h2> <pre class='prettyprint'><xmp><button onclick="elseday()">Time of day greeter</button>
+<p id="timeelse"></p>
             
-              <!-- this is where I left off -->
+<script>
+    function elseday() {
+        var hourNow = new Date().getHours();
+        var greetingNow;
+        if (hourNow < 18) {
+            greetingNow = "Good Day!";
+        } 
+        else {
+            greetingNow = "Good Evening!";
+        } 
+        document.getElementById("timeelse").innerHTML = greetingNow;
+    } 
+</script></xmp></pre>
+            <button onclick="elseday()">Time of day greeter</button>
+            <p id="timeelse"></p>
+            <script>
+                function elseday() {
+                    var hourNow = new Date().getHours();
+                    var greetingNow;
+                    if (hourNow < 18) {
+                        greetingNow = "Good Day!";
+                    }
+                    else {
+                        greetingNow = "Good Evening!";
+                    }
+                    document.getElementById("timeelse").innerHTML = greetingNow;
+                }
+            </script>
+            <br>
+            <br>
+            <h2>The else if statement</h2>
+            <h4>Example</h4> If time is less the 10:00, create a "Good Morning" greeting, if not, but time is less than 20:00,
+            <br> create a "Good Day" greeting, otherwise create a "Good Evening" greeting.
+            <br>
+            <br> <pre class='prettyprint'><xmp><button onclick="allgreeter()">Greet the guest</button>
+<p id="allday"></p>
+            
+<script>
+    function allgreeter() {
+        var greettime = new Date().getHours();
+        var greetmessage;
+        if (greettime < 10) {
+            greetmessage = "Good Morning";
+        }
+        else if (greettime < 20){
+            greetmessage = "Good Day";
+        }
+        else {
+            greetmessage = "Good Evening";
+        }
+        document.getElementById("allday").innerHTML = greetmessage;
+    }
+</script></xmp></pre>
+            <button onclick="allgreeter()">Greet the guest</button>
+            <p id="allday"></p>
+            <script>
+                function allgreeter() {
+                    var greettime = new Date().getHours();
+                    var greetmessage;
+                    if (greettime < 10) {
+                        greetmessage = "Good Morning";
+                    }
+                    else if (greettime < 20) {
+                        greetmessage = "Good Day";
+                    }
+                    else {
+                        greetmessage = "Good Evening";
+                    }
+                    document.getElementById("allday").innerHTML = greetmessage;
+                }
+            </script>
+            <br>
+            <br>
+            <p class="separator"></p>
+            <h1 id="switch"></h1>
+            <h2>JavaScript Switch</h2> Use the switch statement to select one of many blocks of code to be executed.
+            <br>
+            <h4>Syntax</h4> <pre class='1prettyprint'><xmp>switch (expression) {
+    case n:
+        code block
+        break;
+    case n:
+        code block
+        break;
+    default:
+        default code block
+}</xmp></pre>
+            <br>
+            <br> The switch expression is evaluated once.
+            <br> The value of the expression is compared with the values of each case
+            <br> If there is a match, the associated block is code is executed.
+            <br>
+            <br>
+            <div class="cblock;">
+                <h3>Example</h3> The getDay() method returns the weekday as a number between 0 and 6.
+                <br> This example uses the weekday number to calculate the weekday name.
+                <br>
+                <br> <pre class='prettyprint'><xmp>  var daytoday;
+    switch (new Date().getDay()) {
+        case 0: 
+            daytoday = "Sunday";
+            break;
+        case 1:
+            daytoday = "Monday";
+            break;
+        case 2: 
+            daytoday = "Tuesday";
+            break;
+        case 3:
+            daytoday = "Wednesday";
+            break;
+        case 4:
+            daytoday = "Thursday";
+            break;
+        case 5:
+            daytoday = "Friday";
+        case 6:
+            daytoday = "Saturday";
+            break;
+    }
+    document.getElementById("todaysdate").innerHTML = "Today is " + daytoday;
+</xmp></pre>
+                <p id="todaysdate"></p>
+                <script>
+                    var daytoday;
+                    switch (new Date().getDay()) {
+                    case 0:
+                        daytoday = "Sunday";
+                        break;
+                    case 1:
+                        daytoday = "Monday";
+                        break;
+                    case 2:
+                        daytoday = "Tuesday";
+                        break;
+                    case 3:
+                        daytoday = "Wednesday";
+                        break;
+                    case 4:
+                        daytoday = "Thursday";
+                        break;
+                    case 5:
+                        daytoday = "Friday";
+                    case 6:
+                        daytoday = "Saturday";
+                        break;
+                    }
+                    document.getElementById("todaysdate").innerHTML = "Today is " + daytoday;
+                </script>
+            </div>
+            <br>
+            <br>
+            <h2>The default Keyword</h2> The <span class='highlight'>default</span> keyword specifies the code to run if there is no case match:
+            <br>
+            <br> <pre class='prettyprint'><xmp>switch (new Date().getDay()) {
+    case 6:
+        dytext = "Today is Saturday";
+        break; 
+    case 0:
+        dytext = "Today is Sunday";
+        break; 
+    default: 
+        dytext = "Looking forward to the Weekend";
+}
+document.getElementById("weekend").innerHTML = dytext; 
+</xmp></pre>
+            <p id="weekend"></p>
+            <script>
+                switch (new Date().getDay()) {
+                case 6:
+                    dytext = "Today is Saturday";
+                    break;
+                case 0:
+                    dytext = "Today is Sunday";
+                    break;
+                default:
+                    dytext = "Looking forward to the Weekend";
+                }
+                document.getElementById("weekend").innerHTML = dytext;
+            </script>
+            <br>
+            <h1 id="loops"></h1>
+            <h2>JavaScript Loops</h2> Loops are handy if you want to run the same code over and over again, each time with a different value.
+            <br> Of this is the case when working with arrays:
+            <br>
+            <br>
+            <div class="cblock"> Instead of writing:
+                <br>
+                <br> <pre class='prettyprint'><xmp><script>  
+    text += cars[0] + "<br>";
+    text += cars[1] + "<br>";
+    text += cars[2] + "<br>";
+    text += cars[3] + "<br>";
+    text += cars[4] + "<br>";
+    text += cars[5] + "<br>";
+</script>               </xmp></pre>
+                <br>
+                <br> We can write:
+                <br>
+                <br> <pre class='prettyprint'><xmp><script>
+    for (i = 0; i<vehicles.length; i++) {
+        text += vehicles[i] + "<br>";
+    }
+</script>    </xmp></pre>
+                <br>
+                <br> In action it will look something like this: <pre class='prettyprint'><xmp><p id="listofcars"></p>
+                
+<script>
+    var newvehicles = ["BMW", "Tesla", "Audi", "Kia"];
+    var cartext = "";
+    var i;
+    for (i = 0; i < newvehicles.length; i++) {
+        cartext += newvehicles[i] + "<br>";
+    }
+    document.getElementById("listofcars").innerHTML = cartext;
+</script>
+</xmp></pre>
+                <p id="listofcars"></p>
+                <script>
+                    var newvehicles = ["BMW", "Tesla", "Audi", "Kia"];
+                    var cartext = "";
+                    var i;
+                    for (i = 0; i < newvehicles.length; i++) {
+                        cartext += newvehicles[i] + "<br>";
+                    }
+                    document.getElementById("listofcars").innerHTML = cartext;
+                </script>
+            </div>
+            <br>
+            <br>
+            <h2>Different Kinds of Loops</h2> <span class='highlight'>for</span> loops through a block of code a number of times <span class='highlight'>for/in</span> loops through the properties of an object <span class='highlight'>while</span> loops through a block of code while a specified condition is true <span class='highlight'>do/while</span> also loops through a block of code while a specified condition is true
+            <br>
+            <br>
+            <h2>For Loop</h2> The for loop is often the tool used when wanting to create a loop.
+            <br>The loop has the following syntax
+            <br>
+            <br> <pre class='1prettyprint'><xmp>for(statement 1; statement 2; statement 3) {
+    code block to be executed
+}</xmp></pre>
+            <br> Statement 1 is exeuted before the loop (the code block) starts
+            <br> Statement 2 defines the condition for running the loop (the code block)
+            <br> Statement 3 is executed each time after the loop (code block) has ben executed
+            <br>
+            <br> <pre class='prettyprint'><xmp><script>
+    var text = "";
+    var i;
+    for (i = 0; i < 5; i++) {
+        text+= "The number is " + i + "<br>";
+    }
+</script></xmp></pre> Statement 1 sets a variable before the loop starts (var i = 0)
+            <br> Statement 2 defines the condition for the loop to run (i must be less than 5)
+            <br> Statement 3 increases a value (i++) each time the code block in the loop has been executed
+            <br>
+            <br>
+            <h2>Statement 1</h2> Normally you would use statement 1 to initialize the variable used in the loop (i = 0)
+            <br> This is not always the case, js doesn't care. Statement 1 is optional
+            <br> You can iterate many values in statement 1 separated by commas
+            <br>
+            <br> <pre class='prettyprint'><xmp><p id="automobiles"></p>
+            
+<script>
+    var autos = ["BMW", "Tesla", "Audi", "Kia"];
+    var aa, ln, atxt;
+    for (aa = 0, ln = autos.length, atxt = ""; aa < ln; aa++) {
+        atxt += autos[aa] + "<br>";
+    }
+    document.getElementById("automobiles").innerHTML = atxt;
+</script></xmp></pre>
+            <br> And you can omit statement 1 (like when your values are set before the loop starts):
+            <br>
+            <br> <pre class='prettyprint'><xmp><p id="automobiles"></p>
+            
+<script>
+    var autos = ["BMW", "Tesla", "Audi", "Kia"];
+    var aa = 0;
+    var ln = autos.length;
+    var atxt = "";
+    for (; aa < ln; aa++) {
+        atxt += autos[aa] + "<br>";
+    }
+    document.getElementById("automobiles").innerHTML = atxt;
+</script></xmp></pre>
+            <br>
+            <br>
+            <h2>Statement 2</h2> Often statement 2 is used to evaluate the condition of the initial variable
+            <br> This isn't always the case, js doesn't care. Statement 2 is also optional
+            <br> If statement 2 returns true, the loop will start over again, if it returns false, the loop will end
+            <br>
+            <br>
+            <div class="cblock">If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will
+                <br> never end. This will crash the browser.</div>
+            <br>
+            <br>
+            <h2>Statement 3</h2> Often Statement 3 increments the value of the initial variable.
+            <br> This ins't always the case, and 3 is optional
+            <br> Statement 3 can also do anything like negative increment (i--), positive increment (i = i + 15), or anything else
+            <br> Statement three can also be omitted (like when you increment your values inside the loop):
+            <br>
+            <br> <pre class='prettyprint'><xmp><script>
+    var cars = ["BMW", "Volvo", "Saab", "Ford"];
+    var i = 0;
+    var len = cars.length;
+    var text = "";
+    for (; i < len; ) {
+    text += cars[i] + "<br>";
+    i++;
+    }
+    document.getElementById("demo").innerHTML = text;
+</script></xmp></pre>
+            <br>
+            <br>
+            <h2>The For/In Loop</h2> Loops through the properties of an object:
+            <br>
+            <br> <pre class='prettyprint'><xmp><p id="demojon"></p>
+            
+<script>
+    var txt = "";
+    var person = {fName: "Jonathan", mName: "N"};
+    var q;
+    for (q in person) {
+        txt += person[q] + " " ;
+    }
+    document.getElementById("demojon").innerHTML = txt;
+</script></xmp></pre>
+            <p id="demojon"></p>
+            <script>
+                var txt = "";
+                var person = {
+                    fName: "Jonathan"
+                    , mName: "N"
+                };
+                var q;
+                for (q in person) {
+                    txt += person[q] + " ";
+                }
+                document.getElementById("demojon").innerHTML = txt;
+            </script>
+            <br>
+            <br>
+            <h1 id="while"></h1>
+            <h2>While Loop</h2> Loops can execute a block of code as long as a specifie dcondition is true
+            <br> The <span class='highlight'>while loop</span> loops through a block of code as long as a specified condition is true
+            <br>
+            <h4>Syntax</h4> <pre class='1prettyprint'><xmp>while (condition) {
+    code block to be executed        
+}</xmp></pre>
+            <br>
+            <br> The following example, the code in the loop will run, over and over gaain, as long as a variable (i) is less than 5. <pre class='prettyprint'><xmp><p id="numbers"></p>
+            
+<script>
+    var ntxt = "";
+    var i = 0;
+    while (i < 5) {
+    ntxt +=  "<br>The number is " + i; i++;
+    }
+    document.getElementById("numbers").innerHTML = ntxt;
+</script></xmp></pre>
+            <p id="numbers"></p>
+            <script>
+                var ntxt = "";
+                var i = 0;
+                while (i < 5) {
+                    ntxt += "<br>The number is " + i;
+                    i++;
+                }
+                document.getElementById("numbers").innerHTML = ntxt;
+            </script>
+            <br>
+            <br>
+            <h2>Do/While Loop</h2> The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true,
+            <br> then it will repeat the loop as long as the condition is true.
+            <br>
+            <br> The example uses a do/while loop. The loop will always be executed at least once, even if the condition is false, becaues th e code block
+            <br> is executed before the condition is tested:
+            <br>
+            <br> <pre class='prettyprint'><xmp><script>
+    var i = 0;
+    var ytxt = "";
+    do {
+        ytxt += "<br>The number is " + i; i++;
+    }
+    while (i < 5);
+    document.getElementById("dowhiledemo").innerHTML = ytxt;
+</script></xmp></pre>
+            <p id="dowhiledemo"></p>
+            <script>
+                var i = 0;
+                var ytxt = "";
+                do {
+                    ytxt += "<br>The number is " + i;
+                    i++;
+                }
+                while (i < 5);
+                document.getElementById("dowhiledemo").innerHTML = ytxt;
+            </script>
+            
+            <br><br>
+            <p class="Separator"></p>
+           <h2>Break and Continue</h2>
+            The break statement "jumps out" of a loop<br>
+            The continue statement "jumps over" one iteration in the loop<br><br>
+            <h2>The Break Statement</h2>
+            It is used to jump out of a switch() statement<br>
+            The break statement can also be used to jump out of a loop<br>
+            The break statement breaks the loop and continues executing the code after the loop (if any)<br><br>
+            <pre class='prettyprint'><xmp><script>
+    var text = "";
+    var i;
+    for (i = 0; i < 10; i++) {
+        if (i === 3) { break; }
+            text += "The number is " + i + "<br>";
+    }
+    document.getElementById("ijwoer").innerHTML = text;
+</script></xmp></pre>
+            
+            <h2>Continue Statement</h2>
+            <pre class='prettyprint'><xmp><script>
+    for (i = 0; i < 10; i++) {
+        if (i === 3) { continue; }
+        text += "The number is " + i + "<br>";
+    }
+</script></xmp></pre>
+            <!-- this is where I left off -->
         </div>
         <!-- col --->
     </div>
@@ -1794,6 +2469,11 @@ function myFunction2() {
                 <li> <a href="#arraymethods">array methods</a></li>
                 <li> <a href="#sorting">sorting arrays</a></li>
                 <li> <a href="#booleans">booleans</a></li>
+                <li> <a href="#comparisons">comparisons</a></li>
+                <li> <a href="#conditions">conditions</a></li>
+                <li> <a href="#switch">switch</a></li>
+                <li> <a href="#loops">loops</a></li>
+                <li> <a href="#while">while loop</a></li>
             </ul>
         </div>
     </nav>

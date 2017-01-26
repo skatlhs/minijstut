@@ -101,14 +101,18 @@
 
 .menu a {
     color: rgba(255, 255, 255, 0.49);
+    border-left:5px solid transparent;
+    padding-left:10px;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     transition: all 0.2s ease;
+    margin-left:-20px;
 }
 
 .menu a:hover {
     color: white;
+        border-left:5px solid #ff406d;
     text-decoration: none;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
